@@ -22,7 +22,7 @@ int wordInArray(char *word, char **wordArray, int size)
     return 0;
 }
 
-int readUniqueWordFromFile(char *filepath, int fileLength, char ***pWordArray)
+int readFileToArray(char *filepath, int fileLength, char ***pAllWords)
 {
     FILE *file = fopen(filepath, "r");
     if (file == NULL)
@@ -31,6 +31,7 @@ int readUniqueWordFromFile(char *filepath, int fileLength, char ***pWordArray)
         return -1;
     }
     char **allWords = (char **)malloc(fileLength * sizeof(char *));
+
     char wordBuffer[MAX_WORD_LENGTH];
     for (int i = 0; i < fileLength; i++)
     {
@@ -42,7 +43,15 @@ int readUniqueWordFromFile(char *filepath, int fileLength, char ***pWordArray)
         }
         allWords[i] = strdup(wordBuffer);
     }
+    *pAllWords = allWords;
     fclose(file);
+
+    return 1;
+}
+
+int findUniqueWord(char **allWords, int fileLength, char ***pWordArray)
+{
+
     int uniqueWordLength = 0;
     char **uniqueWords = (char **)malloc(fileLength * sizeof(char *));
     for (int i = 0; i < fileLength; i++)
@@ -53,11 +62,7 @@ int readUniqueWordFromFile(char *filepath, int fileLength, char ***pWordArray)
             uniqueWords[uniqueWordLength++] = strdup(temp);
         }
     }
-    for (int i = 0; i < fileLength; i++)
-    {
-        free(allWords[i]);
-    }
-    free(allWords);
+
     *pWordArray = uniqueWords;
     return uniqueWordLength;
 }
