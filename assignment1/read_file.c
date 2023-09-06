@@ -6,10 +6,36 @@
 
 // int main()
 // {
-//     char **unique_words;
-//     int unique_words_length = readUniqueWordFromFile("LITTLE_WOMEN.txt", 195467, &unique_words);
-//     printf("%d", unique_words_length);
+//     // char **unique_words;
+//     // int unique_words_length = readUniqueWordFromFile("LITTLE_WOMEN.txt", 195467, &unique_words);
+//     // printf("%d", unique_words_length);
+//     int line = countLineInFiles("MOBY_DICK.txt");
+//     printf("%d words", line);
 // }
+
+int countLineInFiles(char *filePath)
+{
+    FILE *file;
+    file = fopen(filePath, "r");
+    int count = 1;
+    char c;
+    if (file == NULL)
+    {
+        perror("Error opening file");
+        return -1;
+    }
+
+    // Extract characters from file and store in character c
+    for (c = getc(file); c != EOF; c = getc(file))
+        if (c == '\n') // Increment count if this character is newline
+            count++;
+
+    // Close the file
+    fclose(file);
+
+    return count;
+}
+
 int wordInArray(char *word, char **wordArray, int size)
 {
     for (int i = 0; i < size; i++)
@@ -62,7 +88,7 @@ int findUniqueWord(char **allWords, int fileLength, char ***pWordArray)
             uniqueWords[uniqueWordLength++] = strdup(temp);
         }
     }
-
+    uniqueWords = realloc(uniqueWords, uniqueWordLength * sizeof(char *));
     *pWordArray = uniqueWords;
     return uniqueWordLength;
 }
