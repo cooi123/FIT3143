@@ -42,12 +42,14 @@ int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int 
 
 int main(int argc, char **argv)
 {
-    if (!argc || argc <= 1)
+    if (!argc || argc <= 2)
     {
-        perror("please provide file paths");
+        perror("please provide read file paths and query file path");
         return EXIT_FAILURE;
     }
-    int num_files = argc - 1;
+
+    char *query_file_path = argv[argc - 1];
+    int num_files = argc - 2;
     printf("number of files %d\n", num_files);
     char ***unique_words_files;
     int *unique_length_files;
@@ -80,9 +82,6 @@ int main(int argc, char **argv)
     time_taken = (time_taken + (endHashComp.tv_nsec - startHashComp.tv_nsec)) * 1e-9;
     printf("Inserting process time(s): %lf\n", time_taken);
 
-    char query_file_path[100];
-    printf("Enter query file path: ");
-    scanf("%s", query_file_path);
     FILE *file = fopen(query_file_path, "r");
     if (file == NULL)
     {
