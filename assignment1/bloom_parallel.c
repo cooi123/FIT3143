@@ -8,6 +8,7 @@
 #define MAX_FP_RATE 0.05
 #define HASH_FUNCTIONS 5
 unsigned int jenkins_one_at_a_time_hashing(char *string, int m);
+int insertingHashedValues(int unique_words_length, char **unique_words, char **p_Bit_array);
 
 const int prime_nums[HASH_FUNCTIONS] = {
     31,
@@ -18,6 +19,7 @@ int isInArray(char *target, char *bit_array, int bit_array_size);
 int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int **unique_length_files)
 {
     char ***all_files_unique_word = (char ***)malloc(sizeof(char **) * num_files);
+    int *unique_length_files_temp = (int *)malloc(sizeof(int) * num_files);
 #pragma omp parallel for
     for (int i = 1; i <= num_files; i++)
     {
@@ -27,14 +29,14 @@ int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int 
         char **all_words_file = (char **)malloc(sizeof(char *) * number_lines);
         if (readFileToArray(file, number_lines, &all_words_file) == 0)
         {
-            perror("error reading words to array");
-            return -1;
+            // perror("error reading words to array");
+            // return -1;
         }
-
-        *(unique_length_files + file_index) = findUniqueWord(all_words_file, number_lines, &all_files_unique_word[file_index]);
-        printf("%s has number of lines %d has %d of unique words\n", file, number_lines, *(unique_length_files + file_index));
+        unique_length_files_temp[file_index] = findUniqueWord(all_words_file, number_lines, &all_files_unique_word[file_index]);
+        printf("%s has number of lines %d has %d of unique words\n", file, number_lines, unique_length_files_temp[file_index]);
     }
     *pUniqueWord = all_files_unique_word;
+    *unique_length_files = unique_length_files_temp;
     return 1;
 }
 
@@ -48,9 +50,9 @@ int main(int argc, char **argv)
     int num_files = argc - 1;
     printf("number of files %d\n", num_files);
     char ***unique_words_files;
-    int unique_length_files[num_files];
+    int *unique_length_files;
     char *bit_arrays[num_files];
-    struct timespec start, end, startReading, endReading, startFindingUnique, endFindingUnique, startHashComp, endHashComp;
+    struct timespec start, end, startReading, endReading, startHashComp, endHashComp;
     double time_taken;
     clock_gettime(CLOCK_MONOTONIC, &start);
     clock_gettime(CLOCK_MONOTONIC, &startReading);
@@ -78,23 +80,55 @@ int main(int argc, char **argv)
     time_taken = (time_taken + (endHashComp.tv_nsec - startHashComp.tv_nsec)) * 1e-9;
     printf("Inserting process time(s): %lf\n", time_taken);
 
+    char query_file_path[100];
+    printf("Enter query file path: ");
+    scanf("%s", query_file_path);
+    FILE *file = fopen(query_file_path, "r");
+    if (file == NULL)
+    {
+        perror("Error opening file");
+        return -1;
+    }
+    char queryWord[100];
+    int files_check = 0;
+    int found;
+    int falsePostiveNum = 0;
+    while (fscanf(file, "%s %d", queryWord, &found) == 2)
+    {
+        for (int i = 0; i < num_files; i++)
+        {
+            int bit_array_size = strlen(bit_arrays[i]);
+            if (isInArray(queryWord, bit_arrays[i], bit_array_size) != found)
+            {
+                files_check++;
+            }
+        }
+        if (files_check == num_files)
+        {
+            printf("%s not found in bit array\n", queryWord);
+
+            falsePostiveNum++;
+        }
+    }
+    printf("false positive number %d", falsePostiveNum);
+    fclose(file);
+
     // Get the clock current time again
     // Subtract end from start to get the CPU time used.
     clock_gettime(CLOCK_MONOTONIC, &end);
     time_taken = (end.tv_sec - start.tv_sec) * 1e9;
     time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
     printf("Total Process time(s): %lf\n", time_taken);
-
-    // for (int i = 0; i < num_files; i++)
-    // {
-    //     printf("%s", bit_arrays[i]);
-    // }
     return 0;
 }
 
+/**
+ * return 0 if succesfully insert
+ */
 int insertingHashedValues(int unique_words_length, char **unique_words, char **p_Bit_array)
 {
     int bit_array_size = -(unique_words_length * log(MAX_FP_RATE)) / pow(log(2), 2);
+    printf("unique word length %d, hash val size %d", unique_words_length, bit_array_size);
     char *bit_array = (char *)malloc(bit_array_size + 1 * sizeof(char));
     for (int i = 0; i < bit_array_size; i++)
     {
@@ -116,6 +150,10 @@ int insertingHashedValues(int unique_words_length, char **unique_words, char **p
     return EXIT_SUCCESS;
 }
 
+/**
+ * return 0 if not found, return 1 if found
+ *
+ */
 int isInArray(char *target, char *bit_array, int bit_array_size)
 {
     for (int p_i = 0; p_i < HASH_FUNCTIONS; p_i++)
