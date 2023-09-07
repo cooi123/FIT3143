@@ -16,10 +16,13 @@ num_runs=5
 # Define the input files
 input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
 
-# Loop through each input file
-for input_file in "${input_files[@]}"; do
+# Loop through an increasing number of input files
+for ((num_input_files=1; num_input_files <= ${#input_files[@]}; num_input_files++)); do
     for ((i=1; i<=num_runs; i++)); do
-        ./bloom_serial "$input_file" query.txt >> serial_result.txt
+        # Select the first num_input_files files from the list
+        selected_files=("${input_files[@]:0:num_input_files}")
+        # Run the program with the selected input files
+        ./bloom_serial "${selected_files[@]}" query.txt >> serial_result.txt
     done
 done
 

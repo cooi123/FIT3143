@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=bloom_parallel	 ### name your job 
-#SBATCH --time=00:1:00		 ### hh:mm:ss or dd-hh:mm:ss
+#SBATCH --time=00:10:00		 ### hh:mm:ss or dd-hh:mm:ss
 #SBATCH --mem=16G				 ### memory setting is max @ 2 GB per core
 #SBATCH --ntasks=1				 ### launch one process
 #SBATCH --cpus-per-task=8		 ### multi-threaded processes
@@ -16,10 +16,13 @@ num_runs=5
 # Define the input files
 input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
 
-# Loop through each input file
-for input_file in "${input_files[@]}"; do
+# Loop through an increasing number of input files
+for ((num_input_files=1; num_input_files <= ${#input_files[@]}; num_input_files++)); do
     for ((i=1; i<=num_runs; i++)); do
-        ./bloom_parallel "$input_file" query.txt >> parallel_result.txt
+        # Select the first num_input_files files from the list
+        selected_files=("${input_files[@]:0:num_input_files}")
+        # Run the program with the selected input files
+        ./bloom_parallel "${selected_files[@]}" query.txt >> parallel_result.txt
     done
 done
 
