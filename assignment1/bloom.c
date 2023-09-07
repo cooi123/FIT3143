@@ -89,7 +89,7 @@ int main(int argc, char **argv)
         }
         if (files_check == num_files)
         {
-            printf("%s not found in bit array\n", queryWord);
+            // printf("%s not found in bit array\n", queryWord);
 
             falsePostiveNum++;
         }

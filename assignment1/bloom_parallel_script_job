@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=bloom_parallel	 ### name your job 
+#SBATCH --time=00:1:00		 ### hh:mm:ss or dd-hh:mm:ss
+#SBATCH --mem=16G				 ### memory setting is max @ 2 GB per core
+#SBATCH --ntasks=1				 ### launch one process
+#SBATCH --cpus-per-task=8		 ### multi-threaded processes
+#SBATCH --output=bloom_parallel.%j.out
+#SBATCH --partition=defq
+
+# Compile the code
+make bloom_parallel
+
+# Define the number of times you want to run the command
+num_runs=5
+
+# Define the input files
+input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
+
+# Loop through each input file
+for input_file in "${input_files[@]}"; do
+    for ((i=1; i<=num_runs; i++)); do
+        ./bloom_parallel "$input_file" query.txt >> parallel_result.txt
+    done
+done
+
+# Deactivate your virtual environment (if used)
+# source deactivate
+
+echo "Parallel script completed."
+
+exit 0

@@ -6,16 +6,122 @@
 #include <omp.h>
 #include "read_file.h"
 #define MAX_FP_RATE 0.05
-#define HASH_FUNCTIONS 5
+#define HASH_FUNCTIONS 8
 unsigned int jenkins_one_at_a_time_hashing(char *string, int m);
 int insertingHashedValues(int unique_words_length, char **unique_words, char **p_Bit_array);
-
+int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int **unique_length_files);
+int isInArray(char *target, char *bit_array, int bit_array_size);
 const int prime_nums[HASH_FUNCTIONS] = {
     31,
     193,
     389,
-    941, 1193};
-int isInArray(char *target, char *bit_array, int bit_array_size);
+    941, 1193, 2693, 2711, 2731};
+
+/***
+ * argv file to read, file to query is always at the end
+ */
+int main(int argc, char **argv)
+{
+    if (!argc || argc <= 2)
+    {
+        perror("please provide read file paths and query file path");
+        return EXIT_FAILURE;
+    }
+
+    char *query_file_path = argv[argc - 1];
+    int num_files = argc - 2;
+    printf("number of files %d\n", num_files);
+    char ***unique_words_files;
+
+    int *unique_length_files;
+    char *bit_arrays[num_files];
+    int num_procs = omp_get_num_procs();
+    printf("Number of processors: %d\n", num_procs);
+
+    struct timespec start, end, startReading, endReading, startHashComp, endHashComp, startQueryComp, endQueryComp;
+    double time_taken;
+    clock_gettime(CLOCK_MONOTONIC, &start);
+    clock_gettime(CLOCK_MONOTONIC, &startReading);
+
+    if (read_from_files(argv, num_files, &unique_words_files, &unique_length_files) == 0)
+    {
+        perror("error getting words from file");
+        return EXIT_FAILURE;
+    }
+
+    clock_gettime(CLOCK_MONOTONIC, &endReading);
+
+    time_taken = (endReading.tv_sec - startReading.tv_sec) * 1e9;
+    time_taken = (time_taken + (endReading.tv_nsec - startReading.tv_nsec)) * 1e-9;
+    printf("Reading file process time(s): %lf\n", time_taken);
+
+    clock_gettime(CLOCK_MONOTONIC, &startHashComp);
+#pragma omp parallel for
+    for (int i = 0; i < num_files; i++)
+    {
+        insertingHashedValues(unique_length_files[i], unique_words_files[i], &bit_arrays[i]);
+    }
+
+    clock_gettime(CLOCK_MONOTONIC, &endHashComp);
+    time_taken = (endHashComp.tv_sec - startHashComp.tv_sec) * 1e9;
+    time_taken = (time_taken + (endHashComp.tv_nsec - startHashComp.tv_nsec)) * 1e-9;
+    printf("Inserting process time(s): %lf\n", time_taken);
+
+    FILE *file = fopen(query_file_path, "r");
+    if (file == NULL)
+    {
+        perror("Error opening file");
+        return -1;
+    }
+    char queryWord[100];
+    int found;
+    int falsePostiveNum = 0;
+    clock_gettime(CLOCK_MONOTONIC, &startQueryComp);
+
+    while (fscanf(file, "%s %d", queryWord, &found) == 2)
+    {
+        int files_check = 0;
+
+        for (int i = 0; i < num_files; i++)
+        {
+            int bit_array_size = strlen(bit_arrays[i]);
+            if (isInArray(queryWord, bit_arrays[i], bit_array_size) != found)
+            {
+                files_check++;
+            }
+        }
+        if (files_check == num_files)
+        {
+            // printf("%s not found in bit array\n", queryWord);
+
+            falsePostiveNum++;
+        }
+    }
+    printf("false positive number %d", falsePostiveNum);
+    fclose(file);
+
+    clock_gettime(CLOCK_MONOTONIC, &endQueryComp);
+    time_taken = (endQueryComp.tv_sec - startQueryComp.tv_sec) * 1e9;
+    time_taken = (time_taken + (endQueryComp.tv_nsec - startQueryComp.tv_nsec)) * 1e-9;
+    printf("Query process time(s): %lf\n", time_taken);
+
+    // Get the clock current time again
+    // Subtract end from start to get the CPU time used.
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    time_taken = (end.tv_sec - start.tv_sec) * 1e9;
+    time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
+    printf("Total Process time(s): %lf\n", time_taken);
+    for (int i = 0; i < num_files; i++)
+    {
+        free(unique_words_files[i]);
+    }
+
+    free(unique_words_files);
+    free(unique_length_files);
+
+    return 0;
+}
+
 int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int **unique_length_files)
 {
     char ***all_files_unique_word = (char ***)malloc(sizeof(char **) * num_files);
@@ -40,87 +146,6 @@ int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int 
     return 1;
 }
 
-int main(int argc, char **argv)
-{
-    if (!argc || argc <= 2)
-    {
-        perror("please provide read file paths and query file path");
-        return EXIT_FAILURE;
-    }
-
-    char *query_file_path = argv[argc - 1];
-    int num_files = argc - 2;
-    printf("number of files %d\n", num_files);
-    char ***unique_words_files;
-    int *unique_length_files;
-    char *bit_arrays[num_files];
-    struct timespec start, end, startReading, endReading, startHashComp, endHashComp;
-    double time_taken;
-    clock_gettime(CLOCK_MONOTONIC, &start);
-    clock_gettime(CLOCK_MONOTONIC, &startReading);
-
-    if (read_from_files(argv, num_files, &unique_words_files, &unique_length_files) == 0)
-    {
-        perror("error getting words from file");
-        return EXIT_FAILURE;
-    }
-
-    clock_gettime(CLOCK_MONOTONIC, &endReading);
-
-    time_taken = (endReading.tv_sec - startReading.tv_sec) * 1e9;
-    time_taken = (time_taken + (endReading.tv_nsec - startReading.tv_nsec)) * 1e-9;
-    printf("Reading file process time(s): %lf\n", time_taken);
-
-    clock_gettime(CLOCK_MONOTONIC, &startHashComp);
-    for (int i = 0; i < num_files; i++)
-    {
-        insertingHashedValues(unique_length_files[i], unique_words_files[i], &bit_arrays[i]);
-    }
-
-    clock_gettime(CLOCK_MONOTONIC, &endHashComp);
-    time_taken = (endHashComp.tv_sec - startHashComp.tv_sec) * 1e9;
-    time_taken = (time_taken + (endHashComp.tv_nsec - startHashComp.tv_nsec)) * 1e-9;
-    printf("Inserting process time(s): %lf\n", time_taken);
-
-    FILE *file = fopen(query_file_path, "r");
-    if (file == NULL)
-    {
-        perror("Error opening file");
-        return -1;
-    }
-    char queryWord[100];
-    int files_check = 0;
-    int found;
-    int falsePostiveNum = 0;
-    while (fscanf(file, "%s %d", queryWord, &found) == 2)
-    {
-        for (int i = 0; i < num_files; i++)
-        {
-            int bit_array_size = strlen(bit_arrays[i]);
-            if (isInArray(queryWord, bit_arrays[i], bit_array_size) != found)
-            {
-                files_check++;
-            }
-        }
-        if (files_check == num_files)
-        {
-            printf("%s not found in bit array\n", queryWord);
-
-            falsePostiveNum++;
-        }
-    }
-    printf("false positive number %d", falsePostiveNum);
-    fclose(file);
-
-    // Get the clock current time again
-    // Subtract end from start to get the CPU time used.
-    clock_gettime(CLOCK_MONOTONIC, &end);
-    time_taken = (end.tv_sec - start.tv_sec) * 1e9;
-    time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
-    printf("Total Process time(s): %lf\n", time_taken);
-    return 0;
-}
-
 /**
  * return 0 if succesfully insert
  */
@@ -129,6 +154,7 @@ int insertingHashedValues(int unique_words_length, char **unique_words, char **p
     int bit_array_size = -(unique_words_length * log(MAX_FP_RATE)) / pow(log(2), 2);
     printf("unique word length %d, hash val size %d", unique_words_length, bit_array_size);
     char *bit_array = (char *)malloc(bit_array_size + 1 * sizeof(char));
+    // initalise bit array to 0;
     for (int i = 0; i < bit_array_size; i++)
     {
         bit_array[i] = '0';

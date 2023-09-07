@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=bloom_serial	 ### name your job 
+#SBATCH --time=00:10:00		 ### hh:mm:ss or dd-hh:mm:ss
+#SBATCH --mem=2G				 ### memory setting is max @ 2 GB per core
+#SBATCH --ntasks=1				 ### launch one process
+#SBATCH --cpus-per-task=1		 ### multi-threaded processes
+#SBATCH --output=bloom_serial.%j.out
+#SBATCH --partition=defq
+
+
+make bloom_serial
+
+# Define the number of times you want to run the command
+num_runs=5
+
+# Define the input files
+input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
+
+# Loop through each input file
+for input_file in "${input_files[@]}"; do
+    for ((i=1; i<=num_runs; i++)); do
+        ./bloom_serial "$input_file" query.txt >> serial_result.txt
+    done
+done
+
+# Deactivate your virtual environment (if used)
+# source deactivate
+
+echo "Serial script completed."
