@@ -3,7 +3,6 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
-#include <omp.h>
 #include "read_file.h"
 #define MAX_FP_RATE 0.05
 #define HASH_FUNCTIONS 8
@@ -53,7 +52,6 @@ int main(int argc, char **argv)
     printf("Reading file process time(s): %lf\n", time_taken);
 
     clock_gettime(CLOCK_MONOTONIC, &startHashComp);
-#pragma omp parallel for
     for (int i = 0; i < num_files; i++)
     {
         insertingHashedValues(unique_length_files[i], unique_words_files[i], &bit_arrays[i]);
@@ -123,7 +121,6 @@ int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int 
 {
     char ***all_files_unique_word = (char ***)malloc(sizeof(char **) * num_files);
     int *unique_length_files_temp = (int *)malloc(sizeof(int) * num_files);
-#pragma omp parallel for
     for (int i = 1; i <= num_files; i++)
     {
         int file_index = i - 1;
@@ -157,7 +154,6 @@ int insertingHashedValues(int unique_words_length, char **unique_words, char **p
         bit_array[i] = '0';
     }
     bit_array[bit_array_size] = '\0';
-#pragma omp parallel for collapse(2)
     for (int i = 0; i < unique_words_length; i++)
     {
 
