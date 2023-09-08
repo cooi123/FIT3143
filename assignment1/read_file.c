@@ -3,14 +3,41 @@
 #include <ctype.h>
 #include <string.h>
 #include "read_file.h"
+#include <time.h>
 
 // int main()
 // {
-//     // char **unique_words;
-//     // int unique_words_length = readUniqueWordFromFile("LITTLE_WOMEN.txt", 195467, &unique_words);
-//     // printf("%d", unique_words_length);
-//     int line = countLineInFiles("MOBY_DICK.txt");
-//     printf("%d words", line);
+//     struct timespec start, end, startReading, endReading, startUnique, endUnique;
+//     double time_taken;
+
+//     char **all_words;
+//     char **uniqueWords;
+//     char *textfiles[] = {"LITTLE_WOMEN.txt", "MOBY_DICK.txt", "SHAKESPEARE.txt", "output.txt"};
+//     // int fileSize[] = {195467, 215724, 965466, 528921};
+//     clock_gettime(CLOCK_MONOTONIC, &start);
+//     clock_gettime(CLOCK_MONOTONIC, &startReading);
+//     for (int i = 0; i < 4; i++)
+//     {
+//         int fileSize = countLineInFiles(textfiles[i]);
+//         readFileToArray(textfiles[i], fileSize, &all_words);
+//         clock_gettime(CLOCK_MONOTONIC, &endReading);
+//         time_taken = (endReading.tv_sec - startReading.tv_sec) * 1e9;
+//         time_taken = (time_taken + (endReading.tv_nsec - startReading.tv_nsec)) * 1e-9;
+//         printf("Reading process time(s): %lf\n", time_taken);
+
+//         clock_gettime(CLOCK_MONOTONIC, &startUnique);
+//         int unique_words_length = findUniqueWord(all_words, 195467, &uniqueWords);
+//         printf("%d", unique_words_length);
+//         clock_gettime(CLOCK_MONOTONIC, &endUnique);
+//         time_taken = (endUnique.tv_sec - startUnique.tv_sec) * 1e9;
+//         time_taken = (time_taken + (endUnique.tv_nsec - startUnique.tv_nsec)) * 1e-9;
+//         printf("Unique process time(s): %lf\n", time_taken);
+//     }
+
+//     clock_gettime(CLOCK_MONOTONIC, &end);
+//     time_taken = (end.tv_sec - start.tv_sec) * 1e9;
+//     time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
+//     printf("Total process time(s): %lf\n", time_taken);
 // }
 
 int countLineInFiles(char *filePath)
