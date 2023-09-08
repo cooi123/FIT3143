@@ -17,7 +17,7 @@ const int prime_nums[HASH_FUNCTIONS] = {
     941, 1193, 2693, 2711, 2731};
 
 /***
- * argv file to read, file to query is always at the end
+ * argv file to read, file to query is always at the end of argument
  */
 int main(int argc, char **argv)
 {
@@ -73,6 +73,7 @@ int main(int argc, char **argv)
     int falsePostiveNum = 0;
     clock_gettime(CLOCK_MONOTONIC, &startQueryComp);
 
+    // querying line by line- not storing the query words
     while (fscanf(file, "%s %d", queryWord, &found) == 2)
     {
         int files_check = 0;
@@ -106,6 +107,7 @@ int main(int argc, char **argv)
     time_taken = (end.tv_sec - start.tv_sec) * 1e9;
     time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
     printf("Total Process time(s): %lf\n", time_taken);
+    // free allocated memory
     for (int i = 0; i < num_files; i++)
     {
         free(unique_words_files[i]);
@@ -117,6 +119,12 @@ int main(int argc, char **argv)
     return 0;
 }
 
+/***
+ * read from files and find the unique word
+ * Store unique word in to an array of array string
+ * Store unique length of each file in a int array
+ * Return 1 if sucessfull
+ */
 int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int **unique_length_files)
 {
     char ***all_files_unique_word = (char ***)malloc(sizeof(char **) * num_files);
@@ -141,6 +149,8 @@ int read_from_files(char **file_paths, int num_files, char ****pUniqueWord, int 
 }
 
 /**
+ * Input a list of strings and a pointer to the bit array
+ * uses k number of hash function to perform bloom insertion
  * return 0 if succesfully insert
  */
 int insertingHashedValues(int unique_words_length, char **unique_words, char **p_Bit_array)
@@ -169,8 +179,9 @@ int insertingHashedValues(int unique_words_length, char **unique_words, char **p
 }
 
 /**
+ * Querying bloom bit array
+ * Input a string and the bit array
  * return 0 if not found, return 1 if found
- *
  */
 int isInArray(char *target, char *bit_array, int bit_array_size)
 {
@@ -187,7 +198,8 @@ int isInArray(char *target, char *bit_array, int bit_array_size)
 }
 
 /**
- *
+ * input string to be hashed and another prime number to distrube the hash value
+ * Hash function modified from wikipedia
  */
 unsigned int jenkins_one_at_a_time_hashing(char *string, int m)
 {

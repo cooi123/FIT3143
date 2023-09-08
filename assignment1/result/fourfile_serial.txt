@@ -1,0 +1,45 @@
+number of files 4
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+output.txt has number of lines 528921 has 46359 of unique words
+Reading file process time(s): 26.257896
+unique word length 13142, hash val size 81943unique word length 22319, hash val size 139163unique word length 36385, hash val size 226868unique word length 46359, hash val size 289058Inserting process time(s): 0.063455
+false positive number 1Query process time(s): 1.613838
+Total Process time(s): 27.936740
+number of files 4
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+output.txt has number of lines 528921 has 46359 of unique words
+Reading file process time(s): 27.485026
+unique word length 13142, hash val size 81943unique word length 22319, hash val size 139163unique word length 36385, hash val size 226868unique word length 46359, hash val size 289058Inserting process time(s): 0.057131
+false positive number 1Query process time(s): 1.376118
+Total Process time(s): 28.919980
+number of files 4
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+output.txt has number of lines 528921 has 46359 of unique words
+Reading file process time(s): 28.130686
+unique word length 13142, hash val size 81943unique word length 22319, hash val size 139163unique word length 36385, hash val size 226868unique word length 46359, hash val size 289058Inserting process time(s): 0.056113
+false positive number 1Query process time(s): 1.362089
+Total Process time(s): 29.550343
+number of files 4
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+output.txt has number of lines 528921 has 46359 of unique words
+Reading file process time(s): 29.832234
+unique word length 13142, hash val size 81943unique word length 22319, hash val size 139163unique word length 36385, hash val size 226868unique word length 46359, hash val size 289058Inserting process time(s): 0.055558
+false positive number 1Query process time(s): 1.350174
+Total Process time(s): 31.239747
+number of files 4
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+output.txt has number of lines 528921 has 46359 of unique words
+Reading file process time(s): 26.765334
+unique word length 13142, hash val size 81943unique word length 22319, hash val size 139163unique word length 36385, hash val size 226868unique word length 46359, hash val size 289058Inserting process time(s): 0.065670
+false positive number 1Query process time(s): 1.588870
+Total Process time(s): 28.422520

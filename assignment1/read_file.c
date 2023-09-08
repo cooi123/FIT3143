@@ -39,7 +39,11 @@
 //     time_taken = (time_taken + (end.tv_nsec - start.tv_nsec)) * 1e-9;
 //     printf("Total process time(s): %lf\n", time_taken);
 // }
-
+/**
+ * count number of new lines in a file
+ * Assume that each line only contain one word
+ *
+ */
 int countLineInFiles(char *filePath)
 {
     FILE *file;
@@ -63,6 +67,10 @@ int countLineInFiles(char *filePath)
     return count;
 }
 
+/**
+ * loop thorugh the proivded array and use strcomparison to check whether the target word is in the list
+ *
+ */
 int wordInArray(char *word, char **wordArray, int size)
 {
     for (int i = 0; i < size; i++)
@@ -75,6 +83,10 @@ int wordInArray(char *word, char **wordArray, int size)
     return 0;
 }
 
+/***
+ * Read file in array, requires the file length
+ * Assueme each line only has 1 word
+ */
 int readFileToArray(char *filepath, int fileLength, char ***pAllWords)
 {
     FILE *file = fopen(filepath, "r");
@@ -102,6 +114,9 @@ int readFileToArray(char *filepath, int fileLength, char ***pAllWords)
     return 1;
 }
 
+/***
+ * find the unique word in a given array of string by slowing building a unique array.
+ */
 int findUniqueWord(char **allWords, int fileLength, char ***pWordArray)
 {
 

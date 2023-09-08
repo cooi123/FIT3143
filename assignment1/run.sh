@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Define the number of times you want to run the command
 num_runs=5
 
 # Output file
@@ -14,6 +13,7 @@ output_file_parallel="parallel_result.txt"
 #compile the code
 make 
 
+echo "running test"
 # Loop for the specified number of runs
 for ((i=1; i<=num_runs; i++)); do
     ./bloom_serial LITTLE_WOMEN.txt query.txt >> "$output_file_serial"

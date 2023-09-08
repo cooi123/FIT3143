@@ -10,10 +10,9 @@
 # Compile the code
 make bloom_parallel
 
-# Define the number of times you want to run the command
 num_runs=5
 
-# Define the input files
+#  input files
 input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
 
 # Loop through an increasing number of input files
@@ -26,8 +25,6 @@ for ((num_input_files=1; num_input_files <= ${#input_files[@]}; num_input_files+
     done
 done
 
-# Deactivate your virtual environment (if used)
-# source deactivate
 
 echo "Parallel script completed."
 

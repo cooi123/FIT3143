@@ -10,10 +10,9 @@
 
 make bloom_serial
 
-# Define the number of times you want to run the command
 num_runs=5
 
-# Define the input files
+# the input files
 input_files=("LITTLE_WOMEN.txt" "MOBY_DICK.txt" "SHAKESPEARE.txt" "output.txt")
 
 # Loop through an increasing number of input files
@@ -25,8 +24,5 @@ for ((num_input_files=1; num_input_files <= ${#input_files[@]}; num_input_files+
         ./bloom_serial "${selected_files[@]}" query.txt >> serial_result.txt
     done
 done
-
-# Deactivate your virtual environment (if used)
-# source deactivate
 
 echo "Serial script completed."
