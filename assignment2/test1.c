@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
     MPI_Cart_rank(chargingNode, coord, &cartRank);
 
     /*Get neighbour node*/
-    MPI_Cart_shift(chargingNode, SHIFT_ROW, DISPLAY, &nodeRowBot, &nodeRowUp);
-    MPI_Cart_shift(chargingNode, SHIFT_COL, DISPLAY, &nodeColLeft, &nodeColRight);
+    MPI_Cart_shift(chargingNode, SHIFT_ROW, DISPLACEMENT, &nodeRowBot, &nodeRowUp);
+    MPI_Cart_shift(chargingNode, SHIFT_COL, DISPLACEMENT, &nodeColLeft, &nodeColRight);
 
     printf("Global rank: %d. Cart rank: %d. Coord: (%d, %d). Left: %d. Right: %d. Top: %d. Bottom: %d\n", myRank, cartRank, coord[0], coord[1], nodeColLeft, nodeColRight, nodeRowBot, nodeRowUp);
 

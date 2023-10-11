@@ -30,11 +30,15 @@ int main()
     //         printf("%d\n", sum);
     //         sum = 0;
     //     }
-    time_t now = time(NULL);
-    // struct tm *ptm = gmtime(&now);
-    // int day = ptm->tm_mday;
-    // printf("The time is: %02d:%02d:%02d\n", ptm->tm_hour,
-    //        ptm->tm_min, ptm->tm_sec);
-    printf("Current day %d", now);
+    while (1)
+    {
+        time_t now = time(NULL);
+        // struct tm *ptm = gmtime(&now);
+        // int day = ptm->tm_mday;
+        // printf("The time is: %02d:%02d:%02d\n", ptm->tm_hour,
+        //        ptm->tm_min, ptm->tm_sec);
+        printf("Current day %d", now);
+        }
+
     return 0;
 }

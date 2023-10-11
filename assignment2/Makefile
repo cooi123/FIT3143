@@ -1,6 +1,6 @@
 CC = mpicc
 CFLAGS = -Wall
-LIBS = -lm
+LIBS = -lm -lpthread
 SIM_CODE = a2.c
 CHARGING_NODE_CODE = charging_nodes.c
 all: sim
