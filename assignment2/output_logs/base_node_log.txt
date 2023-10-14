@@ -1,0 +1,365 @@
+Starting base log
+iteration 5 Base recived report from 2
+Alert time for 2 coord (0,0) : Sat 2023-10-14 13:22:44
+Adjacent Nodes 5 neighbour coor (1,2) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 1 neighbour coor (0,1) 1 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.00
+Total Messages send between reporting node and base: 2
+iteration 5 Base recived report from 8
+Alert time for 8 coord (0,0) : Sat 2023-10-14 13:22:44
+Adjacent Nodes 5 neighbour coor (1,2) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.00
+Total Messages send between reporting node and base: 2
+iteration 6 Base recived report from 3
+Alert time for 3 coord (0,0) : Sat 2023-10-14 13:22:45
+Adjacent Nodes 0 neighbour coor (0,0) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 6 neighbour coor (2,0) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 4 neighbour coor (1,1) 1 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 1.00
+Total Messages send between reporting node and base: 2
+iteration 6 Base recived report from 1
+Alert time for 1 coord (0,0) : Sat 2023-10-14 13:22:45
+Adjacent Nodes 4 neighbour coor (1,1) 1 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Adjacent Nodes 0 neighbour coor (0,0) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 2 neighbour coor (0,2) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Available station (no report in last 3 seconds):Communication time(seconds): 1.00
+Total Messages send between reporting node and base: 2
+iteration 6 Base recived report from 6
+Alert time for 6 coord (0,0) : Sat 2023-10-14 13:22:45
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 1.00
+Total Messages send between reporting node and base: 2
+iteration 6 Base recived report from 5
+Alert time for 5 coord (0,0) : Sat 2023-10-14 13:22:45
+Adjacent Nodes 2 neighbour coor (0,2) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Adjacent Nodes 8 neighbour coor (2,2) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 5
+Adjacent Nodes 4 neighbour coor (1,1) 1 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 1.00
+Total Messages send between reporting node and base: 2
+iteration 12 Base recived report from 2
+Alert time for 2 coord (0,0) : Sat 2023-10-14 13:22:51
+Adjacent Nodes 5 neighbour coor (1,2) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 1 neighbour coor (0,1) 1 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.04
+Total Messages send between reporting node and base: 2
+iteration 13 Base recived report from 3
+Alert time for 3 coord (0,0) : Sat 2023-10-14 13:22:52
+Adjacent Nodes 0 neighbour coor (0,0) 0 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 6 neighbour coor (2,0) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 0.94
+Total Messages send between reporting node and base: 2
+iteration 13 Base recived report from 1
+Alert time for 1 coord (0,0) : Sat 2023-10-14 13:22:52
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Adjacent Nodes 0 neighbour coor (0,0) 0 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 2 neighbour coor (0,2) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Available station (no report in last 3 seconds):Communication time(seconds): 0.94
+Total Messages send between reporting node and base: 2
+iteration 13 Base recived report from 7
+Alert time for 7 coord (0,0) : Sat 2023-10-14 13:22:52
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Adjacent Nodes 6 neighbour coor (2,0) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 8 neighbour coor (2,2) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 5
+Available station (no report in last 3 seconds):Communication time(seconds): 8.00
+Total Messages send between reporting node and base: 2
+iteration 14 Base recived report from 6
+Alert time for 6 coord (0,0) : Sat 2023-10-14 13:22:53
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.93
+Total Messages send between reporting node and base: 2
+iteration 14 Base recived report from 5
+Alert time for 5 coord (0,0) : Sat 2023-10-14 13:22:53
+Adjacent Nodes 2 neighbour coor (0,2) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Adjacent Nodes 8 neighbour coor (2,2) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 5
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 0.95
+Total Messages send between reporting node and base: 2
+iteration 15 Base recived report from 0
+Alert time for 0 coord (0,0) : Sat 2023-10-14 13:22:54
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 1 neighbour coor (0,1) 0 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 10.00
+Total Messages send between reporting node and base: 2
+iteration 15 Base recived report from 8
+Alert time for 8 coord (0,0) : Sat 2023-10-14 13:22:54
+Adjacent Nodes 5 neighbour coor (1,2) 0 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.06
+Total Messages send between reporting node and base: 2
+iteration 15 Base recived report from 4
+Alert time for 4 coord (0,0) : Sat 2023-10-14 13:22:54
+Adjacent Nodes 1 neighbour coor (0,1) 0 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 5 neighbour coor (1,2) 0 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Available station (no report in last 3 seconds):Communication time(seconds): 10.00
+Total Messages send between reporting node and base: 2
+iteration 16 Base recived report from 2
+Alert time for 2 coord (0,0) : Sat 2023-10-14 13:22:55
+Adjacent Nodes 5 neighbour coor (1,2) 0 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 1 neighbour coor (0,1) 0 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.95
+Total Messages send between reporting node and base: 2
+iteration 16 Base recived report from 3
+Alert time for 3 coord (0,0) : Sat 2023-10-14 13:22:55
+Adjacent Nodes 0 neighbour coor (0,0) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 6 neighbour coor (2,0) 0 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 0.91
+Total Messages send between reporting node and base: 2
+iteration 16 Base recived report from 1
+Alert time for 1 coord (0,0) : Sat 2023-10-14 13:22:55
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Adjacent Nodes 0 neighbour coor (0,0) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 2 neighbour coor (0,2) 0 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Available station (no report in last 3 seconds):Communication time(seconds): 0.91
+Total Messages send between reporting node and base: 2
+iteration 17 Base recived report from 7
+Alert time for 7 coord (0,0) : Sat 2023-10-14 13:22:55
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Adjacent Nodes 6 neighbour coor (2,0) 0 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 8 neighbour coor (2,2) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 5
+Available station (no report in last 3 seconds):Communication time(seconds): 7.98
+Total Messages send between reporting node and base: 2
+iteration 17 Base recived report from 6
+Alert time for 6 coord (0,0) : Sat 2023-10-14 13:22:56
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.90
+Total Messages send between reporting node and base: 2
+iteration 17 Base recived report from 5
+Alert time for 5 coord (0,0) : Sat 2023-10-14 13:22:56
+Adjacent Nodes 2 neighbour coor (0,2) 0 available port: 0
+Nearby Nodes 1
+Nearby Nodes 5
+Adjacent Nodes 8 neighbour coor (2,2) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 5
+Adjacent Nodes 4 neighbour coor (1,1) 0 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 0.94
+Total Messages send between reporting node and base: 2
+iteration 18 Base recived report from 0
+Alert time for 0 coord (0,0) : Sat 2023-10-14 13:22:57
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 1 neighbour coor (0,1) 1 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 9.97
+Total Messages send between reporting node and base: 2
+iteration 18 Base recived report from 4
+Alert time for 4 coord (0,0) : Sat 2023-10-14 13:22:57
+Adjacent Nodes 1 neighbour coor (0,1) 1 available port: 0
+Nearby Nodes 0
+Nearby Nodes 2
+Nearby Nodes 4
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 5 neighbour coor (1,2) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Available station (no report in last 3 seconds):Communication time(seconds): 10.01
+Total Messages send between reporting node and base: 2
+iteration 19 Base recived report from 3
+Alert time for 3 coord (0,0) : Sat 2023-10-14 13:22:58
+Adjacent Nodes 0 neighbour coor (0,0) 1 available port: 0
+Nearby Nodes 1
+Nearby Nodes 3
+Adjacent Nodes 6 neighbour coor (2,0) 1 available port: 0
+Nearby Nodes 7
+Nearby Nodes 3
+Adjacent Nodes 4 neighbour coor (1,1) 1 available port: 0
+Nearby Nodes 3
+Nearby Nodes 5
+Nearby Nodes 1
+Nearby Nodes 7
+Available station (no report in last 3 seconds):Communication time(seconds): 0.91
+Total Messages send between reporting node and base: 2
+iteration 20 Base recived report from 8
+Alert time for 8 coord (0,0) : Sat 2023-10-14 13:22:59
+Adjacent Nodes 5 neighbour coor (1,2) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 2
+Nearby Nodes 8
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.09
+Total Messages send between reporting node and base: 2
+iteration 20 Base recived report from 6
+Alert time for 6 coord (0,0) : Sat 2023-10-14 13:22:59
+Adjacent Nodes 3 neighbour coor (1,0) 1 available port: 0
+Nearby Nodes 4
+Nearby Nodes 0
+Nearby Nodes 6
+Adjacent Nodes 7 neighbour coor (2,1) 1 available port: 0
+Nearby Nodes 6
+Nearby Nodes 8
+Nearby Nodes 4
+Available station (no report in last 3 seconds):Communication time(seconds): 0.91
+Total Messages send between reporting node and base: 2

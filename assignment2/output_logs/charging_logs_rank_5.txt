@@ -1,0 +1,71 @@
+Starting log
+current log for rank 5 iteration: 0
+14/9/123 13:22:39, 3
+current log for rank 5 iteration: 2
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+current log for rank 5 iteration: 4
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+rank 5 sent request for availablity to 2
+rank 5 sent request for availablity to 8
+rank 5 sent request for availablity to 4
+rank 5 recieved availablity of 1 from 2
+rank 5 recieved availablity of 1 from 8
+rank 5 recieved availablity of 1 from 4
+current log for rank 5 iteration: 6
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:46, 3
+current log for rank 5 iteration: 8
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:46, 3
+14/9/123 13:22:48, 1
+rank 5 sent request for availablity to 2
+rank 5 sent request for availablity to 8
+rank 5 sent request for availablity to 4
+rank 5 recieved availablity of 2 from 2
+current log for rank 5 iteration: 10
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:46, 3
+14/9/123 13:22:48, 1
+14/9/123 13:22:51, 0
+rank 5 sent request for availablity to 2
+rank 5 sent request for availablity to 8
+rank 5 sent request for availablity to 4
+rank 5 recieved availablity of 1 from 2
+rank 5 recieved availablity of 1 from 8
+rank 5 recieved availablity of 0 from 4
+current log for rank 5 iteration: 12
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:46, 3
+14/9/123 13:22:48, 1
+14/9/123 13:22:51, 0
+14/9/123 13:22:54, 1
+rank 5 sent request for availablity to 2
+rank 5 sent request for availablity to 8
+rank 5 sent request for availablity to 4
+rank 5 recieved availablity of 0 from 2
+rank 5 recieved availablity of 1 from 8
+rank 5 recieved availablity of 0 from 4
+current log for rank 5 iteration: 14
+14/9/123 13:22:39, 3
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:46, 3
+14/9/123 13:22:48, 1
+14/9/123 13:22:51, 0
+14/9/123 13:22:54, 1
+14/9/123 13:22:57, 0
+rank 5 sent request for availablity to 2
+rank 5 sent request for availablity to 8
+rank 5 sent request for availablity to 4
+rank 5 recieved availablity of 2 from 2

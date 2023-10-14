@@ -29,6 +29,8 @@ int main(int argc, char **argv)
     {
         nrows = atoi(argv[1]);
         ncols = atoi(argv[2]);
+        dims[0] = nrows;
+        dims[1] = ncols;
         if ((nrows * ncols) != size - 1)
         {
             if (rank == base)

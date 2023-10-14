@@ -5,13 +5,13 @@
 #include "charging_node.h"
 #include "shared.h"
 #include <pthread.h>
-#define K 3
+const char *dirname = "output_logs";
 #define NODE_THRESHOLD 1
 #define SHIFT_ROW 0
 #define SHIFT_COL 1
 #define DISPLACEMENT 1
 #define MAX_NEIGHBOURS 4
-#define INTERVAL 5
+#define INTERVAL 2
 
 int shared_availability_counter = 0;
 charging_node_logs *charging_logs;
@@ -24,7 +24,7 @@ int shared_ndims;
 int shared_rank;
 int shared_base_rank;
 int node_availability[K] = {0};
-const char *dirname = "output_logs";
+
 MPI_Comm shared_comm;
 MPI_Comm shared_main_comm;
 int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm)
@@ -139,28 +139,32 @@ void *communicate_neighbour_thread_func(void *arg)
         }
     }
     fclose(log_file);
+
     if (!is_all_available)
     {
-        printf("%dBase comm %d\n", shared_rank, shared_base_rank);
-
+        double start = MPI_Wtime();
+        printf("%dBase comm %d at %lf\n", shared_rank, shared_base_rank, start);
+        node_status.start = start;
         char *buffer;
-        int buf_size, buf_size_availability, buf_size_neighbour_size, buf_size_neighbours, buf_size_neighbours_availability;
+        int buf_size, buf_size_availability, buf_size_neighbour_size, buf_size_neighbours, buf_size_neighbours_availability, buf_size_time;
         MPI_Pack_size(1, MPI_INT, shared_main_comm, &buf_size_availability);
         MPI_Pack_size(1, MPI_INT, shared_main_comm, &buf_size_neighbour_size);
         MPI_Pack_size(4, MPI_INT, shared_main_comm, &buf_size_neighbours);
         MPI_Pack_size(4, MPI_INT, shared_main_comm, &buf_size_neighbours_availability);
-        buf_size = buf_size_availability + buf_size_neighbour_size + buf_size_neighbours + buf_size_neighbours_availability;
+        MPI_Pack_size(1, MPI_DOUBLE, shared_main_comm, &buf_size_time);
+        buf_size = buf_size_availability + buf_size_neighbour_size + buf_size_neighbours + buf_size_neighbours_availability + buf_size_time;
         buffer = (char *)malloc(buf_size);
         int position = 0;
         MPI_Pack(&node_status.avilablity, 1, MPI_INT, buffer, buf_size, &position, shared_main_comm);
         MPI_Pack(&node_status.neighbour_size, 1, MPI_INT, buffer, buf_size, &position, shared_main_comm);
         MPI_Pack(&node_status.neighbours, 4, MPI_INT, buffer, buf_size, &position, shared_main_comm);
         MPI_Pack(&node_status.neighbours_avilablity, 4, MPI_INT, buffer, buf_size, &position, shared_main_comm);
-
-        MPI_Send(buffer, buf_size, MPI_PACKED, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
+        MPI_Pack(&node_status.start, 1, MPI_DOUBLE, buffer, buf_size, &position, shared_main_comm);
+        MPI_Send(buffer, buf_size, MPI_PACKED, shared_base_rank, NODE_BASE_COMM_TAG, shared_main_comm);
         free(buffer);
         // MPI_Send(&node_status.avilablity, 1, MPI_INT, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
     }
+
     pthread_mutex_lock(&termiate_flag_mutex);
     communication_thread_done = 1;
     pthread_mutex_unlock(&termiate_flag_mutex);
@@ -214,12 +218,13 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
                     pthread_join(threads[i], NULL);
                 }
                 printf("Process %d terminated.\n", rank);
-                return 0;
-            case BASE_COMM_TAG:
-                printf("Process %d received %d from base.\n", rank, received_value);
+                break;
 
-                MPI_Irecv(&received_value, 1, MPI_INT, base, MPI_ANY_TAG, master_comm, &base_req);
+            case BASE_NODE_COMM_TAG:
+                printf("Next available charging station is %d\n", received_value);
+                break;
             }
+            MPI_Irecv(&received_value, 1, MPI_INT, base, MPI_ANY_TAG, master_comm, &base_req);
         }
         // MPI_Test(&neighbour_req, &comm_flag, &neighbour_status);
         MPI_Iprobe(MPI_ANY_SOURCE, RESPONSE_TAG, comm, &comm_flag, &neighbour_status);
@@ -235,7 +240,10 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
             // set listner again
             MPI_Iprobe(MPI_ANY_SOURCE, RESPONSE_TAG, comm, &comm_flag, &neighbour_status);
         }
-
+        if (terminate_flag)
+        {
+            return 0;
+        }
         if (current_iter % INTERVAL == 0)
         {
             // get current availabiltiy

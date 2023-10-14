@@ -1,10 +1,73 @@
 Starting log
 current log for rank 0 iteration: 0
-14/9/123 11:35:52, 3
-current log for rank 0 iteration: 5
-14/9/123 11:35:52, 3
-14/9/123 11:35:57, 0
-rank 0 sent request for availablity to 2
+14/9/123 13:22:39, 2
+current log for rank 0 iteration: 2
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+current log for rank 0 iteration: 4
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+rank 0 sent request for availablity to 3
 rank 0 sent request for availablity to 1
-rank 0 recieved availablity of 1 from 2
+rank 0 recieved availablity of 2 from 3
+current log for rank 0 iteration: 6
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+current log for rank 0 iteration: 8
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+14/9/123 13:22:47, 3
+current log for rank 0 iteration: 10
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+14/9/123 13:22:47, 3
+14/9/123 13:22:49, 0
+rank 0 sent request for availablity to 3
+rank 0 sent request for availablity to 1
+rank 0 recieved availablity of 2 from 3
+current log for rank 0 iteration: 12
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+14/9/123 13:22:47, 3
+14/9/123 13:22:49, 0
+14/9/123 13:22:52, 1
+rank 0 sent request for availablity to 3
+rank 0 sent request for availablity to 1
+rank 0 recieved availablity of 1 from 3
+rank 0 recieved availablity of 0 from 1
+current log for rank 0 iteration: 14
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+14/9/123 13:22:47, 3
+14/9/123 13:22:49, 0
+14/9/123 13:22:52, 1
+14/9/123 13:22:54, 1
+rank 0 sent request for availablity to 3
+rank 0 sent request for availablity to 1
+rank 0 recieved availablity of 1 from 3
+rank 0 recieved availablity of 1 from 1
+current log for rank 0 iteration: 16
+14/9/123 13:22:39, 2
+14/9/123 13:22:41, 2
+14/9/123 13:22:43, 1
+14/9/123 13:22:45, 2
+14/9/123 13:22:47, 3
+14/9/123 13:22:49, 0
+14/9/123 13:22:52, 1
+14/9/123 13:22:54, 1
+14/9/123 13:22:57, 0
+rank 0 sent request for availablity to 3
+rank 0 sent request for availablity to 1
+rank 0 recieved availablity of 1 from 3
 rank 0 recieved availablity of 1 from 1
