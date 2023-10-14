@@ -1,0 +1,10 @@
+Starting log
+current log for rank 3 iteration: 0
+14/9/123 11:35:52, 2
+current log for rank 3 iteration: 5
+14/9/123 11:35:52, 2
+14/9/123 11:35:57, 0
+rank 3 sent request for availablity to 1
+rank 3 sent request for availablity to 2
+rank 3 recieved availablity of 1 from 1
+rank 3 recieved availablity of 1 from 2

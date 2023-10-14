@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "charging_node.h"
+#include "shared.h"
 #include <pthread.h>
 #define K 3
 #define NODE_THRESHOLD 1
@@ -10,6 +11,7 @@
 #define SHIFT_COL 1
 #define DISPLACEMENT 1
 #define MAX_NEIGHBOURS 4
+#define INTERVAL 5
 
 int shared_availability_counter = 0;
 charging_node_logs *charging_logs;
@@ -20,8 +22,11 @@ volatile int terminate_flag = 0;
 volatile int communication_thread_done = 0;
 int shared_ndims;
 int shared_rank;
+int shared_base_rank;
+int node_availability[K] = {0};
+const char *dirname = "output_logs";
 MPI_Comm shared_comm;
-
+MPI_Comm shared_main_comm;
 int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm)
 {
 
@@ -32,34 +37,33 @@ int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm 
         printf("Comm Size: %d: Grid Dimension =[%d x %d] \n", size, dims[0], dims[1]);
 
     int ierr = MPI_Cart_create(existing_comm, ndims, dims, periods, reorder, new_comm);
-}
-int incoming_car_simulator(int rank)
-{
-    srand(time(NULL) + rank);
-    return rand() % 2;
-}
+    if (ierr != 0)
+    {
+        printf("ERROR[%d] creating CART\n", ierr);
+        MPI_Finalize();
+        exit(0);
+    }
+    char mkdir_cmd[200];
+    snprintf(mkdir_cmd, sizeof(mkdir_cmd), "mkdir -p %s", dirname);
+    system(mkdir_cmd);
+    char filename[200];
+    snprintf(filename, sizeof(filename), "%s/charging_logs_rank_%d.txt", dirname, rank);
 
+    FILE *file = fopen(filename, "w");
+    fprintf(file, "Starting log\n", rank);
+    fclose(file);
+    return ierr;
+}
 void *thread_function(void *arg)
 {
     while (!terminate_flag)
     {
-        // Sleep for a random time between 0 and 1 second
         srand(time(NULL) + (int)arg);
         int sleep_time = rand() % 5;
         sleep(sleep_time);
 
-        // Lock value mutex, perform operation, unlock
-        pthread_mutex_lock(&availabiltiy_counter_mutex);
-        int operation = rand() % 2;
-        if (operation == 0 && shared_availability_counter < K)
-        {
-            shared_availability_counter++;
-        }
-        else if (operation == 1 && shared_availability_counter > 0)
-        {
-            shared_availability_counter--;
-        }
-        pthread_mutex_unlock(&availabiltiy_counter_mutex);
+        int is_available = rand() % 2;
+        node_availability[(int)arg] = is_available;
     }
     printf("terminating threads %d\n", (int)arg);
     return NULL;
@@ -77,7 +81,6 @@ void *communicate_neighbour_thread_func(void *arg)
     // get neighbour nodes
     MPI_Cart_shift(shared_comm, SHIFT_ROW, DISPLACEMENT, &nodeRowBot, &nodeRowUp);
     MPI_Cart_shift(shared_comm, SHIFT_COL, DISPLACEMENT, &nodeColLeft, &nodeColRight);
-    printf("rank: %d. Coord: (%d, %d). Left: %d. Right: %d. Top: %d. Bottom: %d\n", shared_rank, coord[0], coord[1], nodeColLeft, nodeColRight, nodeRowBot, nodeRowUp);
 
     int all_neighbour_ranks[MAX_NEIGHBOURS] = {nodeRowBot, nodeRowUp, nodeColLeft, nodeColRight};
     MPI_Request neighbour_send_req[MAX_NEIGHBOURS];
@@ -86,18 +89,77 @@ void *communicate_neighbour_thread_func(void *arg)
     MPI_Status neighbour_status[MAX_NEIGHBOURS];
     int recieved_availability[MAX_NEIGHBOURS];
     int counter = 0;
+
+    char filename[200];
+    snprintf(filename, sizeof(filename), "%s/charging_logs_rank_%d.txt", dirname, shared_rank);
+
+    FILE *log_file = fopen(filename, "a");
+    if (!log_file)
+    {
+        fprintf(stderr, "Failed to open file for rank %d\n", shared_rank);
+    }
+
     for (int i = 0; i < MAX_NEIGHBOURS; i++)
     {
         int neighbour_rank = all_neighbour_ranks[i];
-        printf("rank %d sending request to %d\n", shared_rank, neighbour_rank);
         MPI_Isend(&temp_val, 1, MPI_INT, neighbour_rank, RESPONSE_TAG, shared_comm, &neighbour_send_req[i]);
         MPI_Irecv(&recieved_availability[i], 1, MPI_INT, neighbour_rank, RESPONSE_TAG, shared_comm, &neighbour_recieve_req[i]);
-    }
+        if (neighbour_rank != -2)
+        {
 
+            fprintf(log_file, "rank %d sent request for availablity to %d\n", shared_rank, neighbour_rank);
+        }
+    }
+    fclose(log_file);
     MPI_Waitall(MAX_NEIGHBOURS, &neighbour_recieve_req, &neighbour_status);
+    charging_node_status node_status;
+    node_status.avilablity = charging_logs->logs[charging_logs->end_index].avilablity;
+    node_status.neighbour_size = 0;
+
+    int is_all_available = 0;
+    log_file = fopen(filename, "a");
+    if (!log_file)
+    {
+        fprintf(stderr, "Failed to open file for rank %d\n", shared_rank);
+    }
     for (int i = 0; i < MAX_NEIGHBOURS; i++)
     {
-        printf("rank %d recieved %d from neighbour %d\n", shared_rank, recieved_availability[i], all_neighbour_ranks[i]);
+        if (all_neighbour_ranks[i] != -2)
+        {
+            fprintf(log_file, "rank %d recieved availablity of %d from %d\n", shared_rank, recieved_availability[i], all_neighbour_ranks[i]);
+
+            if (recieved_availability[i] > NODE_THRESHOLD)
+            {
+                is_all_available = 1;
+                break;
+            }
+            node_status.neighbours[node_status.neighbour_size] = all_neighbour_ranks[i];
+            node_status.neighbours_avilablity[node_status.neighbour_size] = recieved_availability[i];
+            node_status.neighbour_size++;
+        }
+    }
+    fclose(log_file);
+    if (!is_all_available)
+    {
+        printf("%dBase comm %d\n", shared_rank, shared_base_rank);
+
+        char *buffer;
+        int buf_size, buf_size_availability, buf_size_neighbour_size, buf_size_neighbours, buf_size_neighbours_availability;
+        MPI_Pack_size(1, MPI_INT, shared_main_comm, &buf_size_availability);
+        MPI_Pack_size(1, MPI_INT, shared_main_comm, &buf_size_neighbour_size);
+        MPI_Pack_size(4, MPI_INT, shared_main_comm, &buf_size_neighbours);
+        MPI_Pack_size(4, MPI_INT, shared_main_comm, &buf_size_neighbours_availability);
+        buf_size = buf_size_availability + buf_size_neighbour_size + buf_size_neighbours + buf_size_neighbours_availability;
+        buffer = (char *)malloc(buf_size);
+        int position = 0;
+        MPI_Pack(&node_status.avilablity, 1, MPI_INT, buffer, buf_size, &position, shared_main_comm);
+        MPI_Pack(&node_status.neighbour_size, 1, MPI_INT, buffer, buf_size, &position, shared_main_comm);
+        MPI_Pack(&node_status.neighbours, 4, MPI_INT, buffer, buf_size, &position, shared_main_comm);
+        MPI_Pack(&node_status.neighbours_avilablity, 4, MPI_INT, buffer, buf_size, &position, shared_main_comm);
+
+        MPI_Send(buffer, buf_size, MPI_PACKED, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
+        free(buffer);
+        // MPI_Send(&node_status.avilablity, 1, MPI_INT, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
     }
     pthread_mutex_lock(&termiate_flag_mutex);
     communication_thread_done = 1;
@@ -112,9 +174,10 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
     shared_rank = rank;
     shared_ndims = ndims;
     shared_comm = comm;
+    shared_main_comm = master_comm;
+    shared_base_rank = base;
 
     int my_coords[ndims];
-    const int k = 3;
     charging_logs = (charging_node_logs *)malloc(sizeof(charging_node_logs));
     charging_logs->size = 0;
     charging_logs->start_index = 0;
@@ -126,8 +189,8 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
     // send to base
 
     int arr[3] = {0};
-    int sum = 0, iter = 100;
-    int interval = 2, flag;
+    int sum = 0, current_iter = 0;
+    int flag;
     pthread_t threads[K];
     pthread_t communication_thread;
     for (int i = 0; i < K; i++)
@@ -136,56 +199,66 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
     }
     int received_value, temp_val = 0, comm_flag = 0;
     MPI_Irecv(&received_value, 1, MPI_INT, base, MPI_ANY_TAG, master_comm, &base_req);
-    time_t now = time(NULL);
-    struct tm *ptm;
     while (1)
     {
-        now = time(NULL);
-        ptm = gmtime(&now);
-
         MPI_Test(&base_req, &flag, &base_status);
-        if (received_value == TERMINATE_VALUE)
+        if (flag)
         {
-            printf("Process %d received termination signal.\n", rank);
-            terminate_flag = 1;
-            for (int i = 0; i < K; i++)
+            switch (base_status.MPI_TAG)
             {
-                pthread_join(threads[i], NULL);
+            case TERMINATE_TAG:
+                printf("Process %d received termination signal.\n", rank);
+                terminate_flag = 1;
+                for (int i = 0; i < K; i++)
+                {
+                    pthread_join(threads[i], NULL);
+                }
+                printf("Process %d terminated.\n", rank);
+                return 0;
+            case BASE_COMM_TAG:
+                printf("Process %d received %d from base.\n", rank, received_value);
+
+                MPI_Irecv(&received_value, 1, MPI_INT, base, MPI_ANY_TAG, master_comm, &base_req);
             }
-            break;
         }
         // MPI_Test(&neighbour_req, &comm_flag, &neighbour_status);
         MPI_Iprobe(MPI_ANY_SOURCE, RESPONSE_TAG, comm, &comm_flag, &neighbour_status);
-        if (comm_flag)
+        while (comm_flag)
         {
             MPI_Recv(&temp_val, 1, MPI_INT, neighbour_status.MPI_SOURCE, RESPONSE_TAG, comm, &neighbour_status);
-            printf("rank %d received request from %d\n", rank, neighbour_status.MPI_SOURCE);
-            pthread_mutex_lock(&availabiltiy_counter_mutex);
-            MPI_Isend(&shared_availability_counter, 1, MPI_INT, neighbour_status.MPI_SOURCE, RESPONSE_TAG, comm, &neighbour_req);
-            pthread_mutex_unlock(&availabiltiy_counter_mutex);
+            printf("rank %d received request for availability from %d\n", rank, neighbour_status.MPI_SOURCE);
+            pthread_mutex_lock(&charging_logs_mutex);
+            MPI_Isend(&charging_logs->logs[charging_logs->end_index].avilablity, 1, MPI_INT, neighbour_status.MPI_SOURCE, RESPONSE_TAG, comm, &neighbour_req);
+            pthread_mutex_unlock(&charging_logs_mutex);
+            comm_flag = 0;
 
             // set listner again
             MPI_Iprobe(MPI_ANY_SOURCE, RESPONSE_TAG, comm, &comm_flag, &neighbour_status);
-
-            comm_flag = 0;
         }
-        if (ptm->tm_sec % interval == 0)
-        {
 
+        if (current_iter % INTERVAL == 0)
+        {
+            // get current availabiltiy
             pthread_mutex_lock(&availabiltiy_counter_mutex);
-            int current_availability = shared_availability_counter;
+            int current_availability = 0;
+            for (int i = 0; i < K; i++)
+            {
+                current_availability += 1 - node_availability[i];
+            }
             pthread_mutex_unlock(&availabiltiy_counter_mutex);
+            pthread_mutex_lock(&charging_logs_mutex);
+            insert_new_charging_node(charging_logs, current_availability, current_iter);
+
+            write_to_file(rank, charging_logs, current_iter);
+            pthread_mutex_unlock(&charging_logs_mutex);
             if (current_availability <= NODE_THRESHOLD)
             {
                 pthread_create(&communication_thread, NULL, communicate_neighbour_thread_func, (void *)rank);
+                pthread_join(communication_thread, NULL);
             }
-
-            pthread_mutex_lock(&charging_logs_mutex);
-            insert_new_charging_node(charging_logs, current_availability);
-            printf("Printing logs from rank %d\n", rank);
-            print_charging_logs(charging_logs);
-            pthread_mutex_unlock(&charging_logs_mutex);
         }
+        sleep(1);
+
         pthread_mutex_lock(&termiate_flag_mutex);
 
         if (communication_thread_done)
@@ -195,15 +268,17 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
             communication_thread_done = 0;
         }
         pthread_mutex_unlock(&termiate_flag_mutex);
+        current_iter++;
     }
+    free(charging_logs);
 }
 
-int insert_new_charging_node(charging_node_logs *logs, int availablity)
+int insert_new_charging_node(charging_node_logs *logs, int availablity, int iter)
 {
     charging_node node;
     get_time(&node.second, &node.minute, &node.hour, &node.day, &node.month, &node.year);
     node.avilablity = availablity;
-    printf("%d/%d/%d %d:%d:%d, %d\n", node.day, node.month, node.year, node.hour, node.minute, node.second, node.avilablity);
+    printf("iteration %d rank %d availabilty: %d\n", iter, shared_rank, node.avilablity);
 
     if (logs->size == 10)
     {
@@ -241,4 +316,29 @@ void print_charging_logs(charging_node_logs *logs)
 
         logs->start_index = (logs->start_index + 1) % 10;
     }
+}
+
+int write_to_file(int rank, charging_node_logs *logs, int iter)
+{
+
+    char filename[200];
+    snprintf(filename, sizeof(filename), "%s/charging_logs_rank_%d.txt", dirname, rank);
+
+    FILE *log_file = fopen(filename, "a");
+    if (log_file)
+    {
+        fprintf(log_file, "current log for rank %d iteration: %d\n", rank, iter);
+        int start_index = logs->start_index;
+        for (int i = 0; i < logs->size; i++)
+        {
+            fprintf(log_file, "%d/%d/%d %d:%d:%d, %d\n", logs->logs[start_index].day, logs->logs[start_index].month, logs->logs[start_index].year, logs->logs[start_index].hour, logs->logs[start_index].minute, logs->logs[start_index].second, logs->logs[start_index].avilablity);
+            start_index = (start_index + 1) % 10;
+        }
+        fclose(log_file);
+    }
+    else
+    {
+        fprintf(stderr, "Failed to open file for rank %d\n", rank);
+    }
+    return 0;
 }

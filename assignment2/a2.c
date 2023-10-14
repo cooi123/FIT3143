@@ -4,9 +4,11 @@
 #include <mpi.h>
 #include <math.h>
 #include <omp.h>
+#include <time.h>
 #include "charging_node.h"
+#include "base.h"
+#include "shared.h"
 #define NDIMS 2
-int base_func(int base, MPI_Comm master_comm, MPI_Comm comm);
 
 int main(int argc, char **argv)
 {
@@ -43,7 +45,7 @@ int main(int argc, char **argv)
 
     if (rank == base)
     {
-        base_func(base, MPI_COMM_WORLD, &node_comm);
+        base_func(base, MPI_COMM_WORLD, dims, size - 1);
     }
     else
     {
@@ -51,25 +53,5 @@ int main(int argc, char **argv)
         charging_nodes_func(size, rank, base, NDIMS, MPI_COMM_WORLD, node_grid_comm);
     }
     MPI_Finalize();
-    return 0;
-}
-
-int base_func(int base, MPI_Comm master_comm, MPI_Comm comm)
-{
-    int recbuf;
-    MPI_Status status;
-    int iter = 100;
-    for (int i = 0; i < iter; i++)
-    {
-        // MPI_Irecv(&recbuf, 1, MPI_INT, MPI_ANY_SOURCE, 0, master_comm, &status);
-        // printf("recived %d from %d", recbuf, status.MPI_SOURCE);
-    }
-    sleep(5);
-    int term = TERMINATE_VALUE;
-    printf("Terminate");
-    for (int node = 0; node < base; node++)
-    {
-        MPI_Send(&term, 1, MPI_INT, node, 0, master_comm);
-    }
     return 0;
 }
