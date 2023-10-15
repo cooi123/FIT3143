@@ -27,6 +27,9 @@ int shared_base_rank;
 int node_availability[K] = {0};
 MPI_Comm shared_comm;
 MPI_Comm shared_main_comm;
+int number_of_commication_with_neighbour_node = 0;
+int number_of_communication_with_base_node = 0;
+double total_node_communication_time = 0;
 int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm, char *dirname)
 {
 
@@ -98,12 +101,15 @@ void *communicate_neighbour_thread_func(void *arg)
     {
         fprintf(stderr, "Failed to open file for rank %d\n", shared_rank);
     }
-
+    double start_time, end_time;
+    start_time = MPI_Wtime();
     for (int i = 0; i < MAX_NEIGHBOURS; i++)
     {
         int neighbour_rank = all_neighbour_ranks[i];
         MPI_Isend(&temp_val, 1, MPI_INT, neighbour_rank, RESPONSE_TAG, shared_comm, &neighbour_send_req[i]);
+        number_of_commication_with_neighbour_node++;
         MPI_Irecv(&recieved_availability[i], 1, MPI_INT, neighbour_rank, RESPONSE_TAG, shared_comm, &neighbour_recieve_req[i]);
+        number_of_commication_with_neighbour_node++;
         if (neighbour_rank != -2)
         {
 
@@ -111,7 +117,12 @@ void *communicate_neighbour_thread_func(void *arg)
         }
     }
     fclose(log_file);
+
     MPI_Waitall(MAX_NEIGHBOURS, &neighbour_recieve_req, &neighbour_status);
+    end_time = MPI_Wtime();
+
+    total_node_communication_time += end_time - start_time;
+    printf("rank %d total comunication time%.2f", shared_rank, total_node_communication_time);
     charging_node_status node_status;
     node_status.avilablity = charging_logs->logs[charging_logs->end_index].avilablity;
     node_status.neighbour_size = 0;
@@ -162,6 +173,7 @@ void *communicate_neighbour_thread_func(void *arg)
         MPI_Pack(&node_status.neighbours_avilablity, 4, MPI_INT, buffer, buf_size, &position, shared_main_comm);
         MPI_Pack(&node_status.start, 1, MPI_DOUBLE, buffer, buf_size, &position, shared_main_comm);
         MPI_Send(buffer, buf_size, MPI_PACKED, shared_base_rank, NODE_BASE_COMM_TAG, shared_main_comm);
+        number_of_communication_with_base_node++;
         free(buffer);
         // MPI_Send(&node_status.avilablity, 1, MPI_INT, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
     }
@@ -214,6 +226,7 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
         MPI_Test(&base_req, &flag, &base_status);
         if (flag)
         {
+            number_of_communication_with_base_node++;
             switch (base_status.MPI_TAG)
             {
             case TERMINATE_TAG:
@@ -237,9 +250,11 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
         while (comm_flag)
         {
             MPI_Recv(&temp_val, 1, MPI_INT, neighbour_status.MPI_SOURCE, RESPONSE_TAG, comm, &neighbour_status);
+            number_of_commication_with_neighbour_node++;
             printf("rank %d received request for availability from %d\n", rank, neighbour_status.MPI_SOURCE);
             pthread_mutex_lock(&charging_logs_mutex);
             MPI_Isend(&charging_logs->logs[charging_logs->end_index].avilablity, 1, MPI_INT, neighbour_status.MPI_SOURCE, RESPONSE_TAG, comm, &neighbour_req);
+            number_of_commication_with_neighbour_node++;
             pthread_mutex_unlock(&charging_logs_mutex);
             comm_flag = 0;
 
@@ -248,7 +263,7 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
         }
         if (terminate_flag)
         {
-            return 0;
+            break;
         }
         if (current_iter % INTERVAL == 0)
         {
@@ -285,6 +300,17 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
         current_iter++;
     }
     free(charging_logs);
+    char filename[200];
+    snprintf(filename, sizeof(filename), "%s/charging_logs_rank_%d.txt", dirname, rank);
+
+    FILE *log_file = fopen(filename, "a");
+    if (log_file)
+    {
+        fprintf(log_file, "Total Messages send between reporting node %d and base: %d\n", rank, number_of_communication_with_base_node);
+        fprintf(log_file, "Total Messages send between reporting node %d and neighbour nodes: %d\n", rank, number_of_commication_with_neighbour_node);
+        fprintf(log_file, "Total time taken for communication between reporting node %d and neighbour nodes: %f\n", rank, total_node_communication_time);
+    }
+    return 0;
 }
 
 int insert_new_charging_node(charging_node_logs *logs, int availablity, int iter)

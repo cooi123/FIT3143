@@ -12,6 +12,8 @@ FILE *file;
 int current_iteration = 0;
 int *previous_reported_nodes;
 int shared_num_chraging_nodes;
+int number_of_commication_with_node = 0;
+double total_communication_time = 0;
 void *node_communication_thread_function(void *arg)
 {
     int node = (int)arg;
@@ -65,6 +67,8 @@ void *node_communication_thread_function(void *arg)
             start = recieved_status.start;
             end = MPI_Wtime();
             communication_time = fabs(end - start);
+            total_communication_time += communication_time;
+            printf("total communication time %f\n", total_communication_time);
 
             fprintf(file, "Reporting Node %d number of adjacent node: %d available port: %d\n", reported_node, recieved_status.neighbour_size, recieved_status.avilablity);
             int neighbour_coords[2], neighbour_size, nearby_neighbours[4], available_station[shared_num_chraging_nodes];
@@ -92,6 +96,7 @@ void *node_communication_thread_function(void *arg)
                 {
                     fprintf(file, " %d, ", i);
                     MPI_Isend(&available_station[i], 1, MPI_INT, node, BASE_NODE_COMM_TAG, shared_master_comm, &status);
+                    number_of_commication_with_node++;
                 }
             }
             fprintf(file, "\n");
@@ -149,7 +154,10 @@ int base_func(int base, MPI_Comm master_comm, int *dims, int num_chraging_nodes,
     for (int node = 0; node < base; node++)
     {
         MPI_Send(&term, 1, MPI_INT, node, TERMINATE_TAG, master_comm);
+        number_of_commication_with_node++;
     }
+    fprintf(file, "Total Messages send between reporting node and base: %d\n", number_of_commication_with_node);
+    fprintf(file, "Total Communication time(seconds): %.2f\n", total_communication_time);
     fclose(file);
     free(previous_reported_nodes);
     return 0;
