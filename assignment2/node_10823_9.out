@@ -1,0 +1,510 @@
+Allocated Node Information:
+   ReqNodeList=(null) ExcNodeList=(null)
+Running srun -n 9 ./sim output_directory_2_nodes9
+Base is running with 8
+current iteration 1
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 4
+Base is waiting for status from 5
+Base is waiting for status from 6
+current iteration 2
+Base is waiting for status from 7
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 7
+current iteration 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 5
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 7
+current iteration 4
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 3
+Base is waiting for status from 7
+current iteration 5
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 6
+current iteration 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+current iteration 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+current iteration 8
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 4
+current iteration 9
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 6
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+current iteration 10
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 4
+Base is waiting for status from 5
+current iteration 11
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 5
+current iteration 12
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 6
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 1
+current iteration 13
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 4
+current iteration 14
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 1
+current iteration 15
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 4
+current iteration 16
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 4
+current iteration 17
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 4
+current iteration 18
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 1
+current iteration 19
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 1
+current iteration 20
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 4
+current iteration 21
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+Base is waiting for status from 6
+current iteration 22
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 5
+current iteration 23
+Base is waiting for status from 6
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 24
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 25
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 5
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 26
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 27
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 28
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 29
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 30
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 5
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 31
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 5
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 32
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 6
+Base is waiting for status from 4
+Base is waiting for status from 7
+Base is waiting for status from 5
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 33
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 7
+Base is waiting for status from 5
+Base is waiting for status from 3
+Base is waiting for status from 0
+current iteration 34
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 7
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 3
+current iteration 35
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 4
+Base is waiting for status from 7
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 3
+current iteration 36
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 3
+current iteration 37
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 7
+Base is waiting for status from 3
+Base is waiting for status from 5
+Base is waiting for status from 1
+Base is waiting for status from 6
+current iteration 38
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 5
+Base is waiting for status from 1
+current iteration 39
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 40
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 41
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 42
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 2
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 43
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 44
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 45
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 46
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 47
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 48
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 49
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 50
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 51
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 52
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 53
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 54
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 6
+Base is waiting for status from 1
+Base is waiting for status from 5
+current iteration 55
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 6
+Base is waiting for status from 5
+current iteration 56
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 6
+Base is waiting for status from 5
+current iteration 57
+Base is waiting for status from 0
+Base is waiting for status from 7
+Base is waiting for status from 4
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 1
+slurmstepd: error: *** JOB 10831 ON student-caas-n05 CANCELLED AT 2023-10-15T17:31:45 ***
+slurmstepd: error: *** STEP 10831.0 ON student-caas-n05 CANCELLED AT 2023-10-15T17:31:45 ***
+Base is w

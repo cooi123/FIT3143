@@ -1,0 +1,190 @@
+Failed to open file for rank 1
+Failed to open file for rank 1
+[student-caas-n06:3257630] *** Process received signal ***
+[student-caas-n06:3257630] Signal: Segmentation fault (11)
+[student-caas-n06:3257630] Signal code: Address not mapped (1)
+[student-caas-n06:3257630] Failing at address: 0xc0
+[student-caas-n06:3257630] [ 0] /lib64/libpthread.so.0(+0x12cf0)[0x155554d95cf0]
+[student-caas-n06:3257630] [ 1] /lib64/libc.so.6(_IO_vfprintf+0x40)[0x15555450ca20]
+[student-caas-n06:3257630] [ 2] /lib64/libc.so.6(_IO_fprintf+0x98)[0x155554514e38]
+[student-caas-n06:3257630] [ 3] /srv/home/cooi0004/FIT3143/assignment2/./sim[0x401e3e]
+[student-caas-n06:3257630] [ 4] /lib64/libpthread.so.0(+0x81ca)[0x155554d8b1ca]
+[student-caas-n06:3257630] [ 5] /lib64/libc.so.6(clone+0x43)[0x1555544dfe73]
+[student-caas-n06:3257630] *** End of error message ***
+srun: error: student-caas-n06: task 1: Segmentation fault (core dumped)
+Failed to open file for rank 0
+Failed to open file for rank 0
+[student-caas-n06:3257629] *** Process received signal ***
+[student-caas-n06:3257629] Signal: Segmentation fault (11)
+[student-caas-n06:3257629] Signal code: Address not mapped (1)
+[student-caas-n06:3257629] Failing at address: 0xc0
+[student-caas-n06:3257629] [ 0] /lib64/libpthread.so.0(+0x12cf0)[0x155554d95cf0]
+[student-caas-n06:3257629] [ 1] /lib64/libc.so.6(_IO_vfprintf+0x40)[0x15555450ca20]
+[student-caas-n06:3257629] [ 2] /lib64/libc.so.6(_IO_fprintf+0x98)[0x155554514e38]
+[student-caas-n06:3257629] [ 3] /srv/home/cooi0004/FIT3143/assignment2/./sim[0x401e3e]
+[student-caas-n06:3257629] [ 4] /lib64/libpthread.so.0(+0x81ca)[0x155554d8b1ca]
+[student-caas-n06:3257629] [ 5] /lib64/libc.so.6(clone+0x43)[0x1555544dfe73]
+[student-caas-n06:3257629] *** End of error message ***
+Failed to open file for rank 2
+Failed to open file for rank 2
+[student-caas-n07:3062281] *** Process received signal ***
+[student-caas-n07:3062281] Signal: Segmentation fault (11)
+[student-caas-n07:3062281] Signal code: Address not mapped (1)
+[student-caas-n07:3062281] Failing at address: 0xc0
+[student-caas-n07:3062281] [ 0] /lib64/libpthread.so.0(+0x12cf0)[0x155554d95cf0]
+[student-caas-n07:3062281] [ 1] /lib64/libc.so.6(_IO_vfprintf+0x40)[0x15555450ca20]
+[student-caas-n07:3062281] [ 2] /lib64/libc.so.6(_IO_fprintf+0x98)[0x155554514e38]
+[student-caas-n07:3062281] [ 3] /srv/home/cooi0004/FIT3143/assignment2/./sim[0x401e3e]
+[student-caas-n07:3062281] [ 4] /lib64/libpthread.so.0(+0x81ca)[0x155554d8b1ca]
+[student-caas-n07:3062281] [ 5] /lib64/libc.so.6(clone+0x43)[0x1555544dfe73]
+[student-caas-n07:3062281] *** End of error message ***
+srun: error: student-caas-n06: task 0: Segmentation fault (core dumped)
+srun: error: student-caas-n07: task 2: Segmentation fault (core dumped)
+Base is running with 3
+current iteration 1
+current iteration 2
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 3
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 4
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 5
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 6
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 2
+current iteration 7
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 8
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 9
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 10
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 11
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 12
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 13
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 14
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 15
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 16
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 17
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 18
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 19
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 20
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 21
+Base is waiting for status from 0
+Base is waiting for status from 2
+Base is waiting for status from 1
+current iteration 22
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 23
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 24
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 25
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 26
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 27
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 28
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 29
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 30
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 31
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 32
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 33
+Base is waiting for status from 2
+Base is waiting for status from 1
+Base is waiting for status from 0
+current iteration 34
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+--------------------------------------------------------------------------
+WARNING: Open MPI failed to TCP connect to a peer MPI process.  This
+should not happen.
+
+Your Open MPI job may now hang or fail.
+
+  Local host: student-caas-n07
+  PID:        3062282
+  Message:    connect() to 172.23.169.16:1025 failed
+  Error:      Operation now in progress (115)
+--------------------------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 10673 ON student-caas-n06 CANCELLED AT 2023-10-15T16:10:01 DUE TO TIME LIMIT ***
+cu

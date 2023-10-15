@@ -1,0 +1,6 @@
+/srv/home/cooi0004/FIT3143/assignment2/./sim: error while loading shared libraries: libmpi.so.40: cannot open shared object file: No such file or directory
+/srv/home/cooi0004/FIT3143/assignment2/./sim: error while loading shared libraries: libmpi.so.40: cannot open shared object file: No such file or directory
+/srv/home/cooi0004/FIT3143/assignment2/./sim: error while loading shared libraries: libmpi.so.40: cannot open shared object file: No such file or directory
+/srv/home/cooi0004/FIT3143/assignment2/./sim: error while loading shared libraries: libmpi.so.40: cannot open shared object file: No such file or directory
+srun: error: student-caas-n11: tasks 0-1: Exited with exit code 127
+srun: error: student-caas-n12: tasks 2-3: Exited with exit code 127

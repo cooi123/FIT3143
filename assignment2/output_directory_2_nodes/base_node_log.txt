@@ -1,0 +1,129 @@
+Starting base log
+iteration 19 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:41:57
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.00
+Total Messages send between reporting node and base: 2
+iteration 32 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:10
+Reporting Node 1 number of adjacent node: 1 available port: 0
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.01
+Total Messages send between reporting node and base: 2
+iteration 41 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:19
+Reporting Node 1 number of adjacent node: 1 available port: 0
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.02
+Total Messages send between reporting node and base: 2
+iteration 43 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:22
+Reporting Node 0 number of adjacent node: 1 available port: 0
+Adjacent Node 1 coord (1,0) available port: 0
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 25.00
+Total Messages send between reporting node and base: 2
+iteration 49 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:27
+Reporting Node 1 number of adjacent node: 1 available port: 0
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.03
+Total Messages send between reporting node and base: 2
+iteration 49 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:28
+Reporting Node 0 number of adjacent node: 1 available port: 0
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.99
+Total Messages send between reporting node and base: 2
+iteration 51 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:29
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.04
+Total Messages send between reporting node and base: 2
+iteration 52 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:30
+Reporting Node 0 number of adjacent node: 1 available port: 1
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.99
+Total Messages send between reporting node and base: 2
+iteration 53 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:31
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.05
+Total Messages send between reporting node and base: 2
+iteration 54 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:32
+Reporting Node 0 number of adjacent node: 1 available port: 1
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.98
+Total Messages send between reporting node and base: 2
+iteration 55 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:33
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.05
+Total Messages send between reporting node and base: 2
+iteration 56 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:34
+Reporting Node 0 number of adjacent node: 1 available port: 1
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.97
+Total Messages send between reporting node and base: 2
+iteration 57 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:35
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.06
+Total Messages send between reporting node and base: 2
+iteration 58 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:36
+Reporting Node 0 number of adjacent node: 1 available port: 1
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.97
+Total Messages send between reporting node and base: 2
+iteration 59 Base recived report from 1
+Alert time for 1 coord (0,0) : Sun 2023-10-15 17:42:37
+Reporting Node 1 number of adjacent node: 1 available port: 1
+Adjacent Node 0 coord (0,0) available port: 1
+Nearby Nodes 1
+ 1, 
+Communication time(seconds): 0.07
+Total Messages send between reporting node and base: 2
+iteration 60 Base recived report from 0
+Alert time for 0 coord (0,0) : Sun 2023-10-15 17:42:38
+Reporting Node 0 number of adjacent node: 1 available port: 1
+Adjacent Node 1 coord (1,0) available port: 1
+Nearby Nodes 0
+ 0, 
+Communication time(seconds): 24.96
+Total Messages send between reporting node and base: 2

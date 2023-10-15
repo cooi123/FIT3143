@@ -1,0 +1,2 @@
+gcc -Wall bloom_parallel.c read_file.c -fopenmp -o bloom_parallel
+slurmstepd: error: *** JOB 3170 ON student-caas-n01 CANCELLED AT 2023-09-08T02:35:38 DUE TO TIME LIMIT ***

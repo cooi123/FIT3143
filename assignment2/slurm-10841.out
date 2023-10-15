@@ -1,0 +1,595 @@
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 5 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+Base is running with 4
+current iteration 1
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 2
+Base is waiting for status from 2
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 3
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 4
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+current iteration 5
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 6
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+Base is waiting for status from 1
+current iteration 7
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 8
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 9
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 10
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 11
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+Base is waiting for status from 0
+current iteration 12
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 13
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 14
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 3
+current iteration 15
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 3
+current iteration 16
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 17
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 18
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 19
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 20
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 21
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 22
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 23
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 24
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 25
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 3
+Base is waiting for status from 2
+current iteration 26
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 27
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 28
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 29
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 30
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 31
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 32
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 33
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 34
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 35
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 36
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 37
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 38
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 39
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 40
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 41
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 42
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 43
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 44
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 45
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 46
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 47
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 48
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 49
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 50
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 51
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 52
+Base is waiting for status from 0
+Base is waiting for status from 3
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 53
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 54
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 55
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 56
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 57
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 58
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 59
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+current iteration 60
+Process 3 has coordinates (1, 1)
+iteration 0 rank 3 availabilty: 4
+rank 3 received request for availability from 1
+iteration 2 rank 3 availabilty: 1
+node_status availability 13Base comm 4 at 0.000000
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 4 rank 3 availabilty: 1
+node_status availability 13Base comm 4 at 2.007778
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 6 rank 3 availabilty: 2
+rank 3 received request for availability from 2
+iteration 8 rank 3 availabilty: 1
+node_status availability 13Base comm 4 at 7.013667
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 10 rank 3 availabilty: 3
+iteration 12 rank 3 availabilty: 4
+iteration 14 rank 3 availabilty: 3
+iteration 16 rank 3 availabilty: 1
+node_status availability 2rank 3 has enough availability nearby nodes
+rank 3 received request for availability from 1
+rank 3 received request for availability from 2
+iteration 18 rank 3 availabilty: 0
+node_status availability 13Base comm 4 at 19.031386
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 20 rank 3 availabilty: 0
+node_status availability 13Base comm 4 at 21.039270
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 22 rank 3 availabilty: 3
+iteration 24 rank 3 availabilty: 2
+iteration 26 rank 3 availabilty: 3
+iteration 28 rank 3 availabilty: 4
+iteration 30 rank 3 availabilty: 5
+iteration 32 rank 3 availabilty: 5
+iteration 34 rank 3 availabilty: 5
+iteration 36 rank 3 availabilty: 2
+iteration 38 rank 3 availabilty: 4
+iteration 40 rank 3 availabilty: 3
+iteration 42 rank 3 availabilty: 1
+node_status availability 1rank 3 has enough availability nearby nodes
+rank 3 received request for availability from 1
+iteration 44 rank 3 availabilty: 3
+iteration 46 rank 3 availabilty: 1
+node_status availability 1rank 3 has enough availability nearby nodes
+rank 3 received request for availability from 2
+iteration 48 rank 3 availabilty: 0
+node_status availability 2rank 3 has enough availability nearby nodes
+iteration 50 rank 3 availabilty: 2
+iteration 52 rank 3 availabilty: 2
+Process 3 received termination signal.
+terminating threads 0
+terminating threads 4
+terminating threads 3
+terminating threads 2
+terminating threads 1
+Process 3 terminated.
+Comm Size: 4: Grid Dimension =[2 x 2] 
+Process 0 has coordinates (0, 0)
+iteration 0 rank 0 availabilty: 4
+iteration 2 rank 0 availabilty: 1
+node_status availability 4rank 0 has enough availability nearby nodes
+rank 0 received request for availability from 2
+iteration 4 rank 0 availabilty: 1
+node_status availability 10Base comm 4 at 0.000000
+done communicating
+terminating communication thread
+rank 0 received request for availability from 2
+Next available charging station is 1
+iteration 6 rank 0 availabilty: 2
+Next available charging station is 1
+rank 0 received request for availability from 2
+iteration 8 rank 0 availabilty: 1
+node_status availability 10Base comm 4 at 5.010722
+done communicating
+terminating communication thread
+Next available charging station is 1
+iteration 10 rank 0 availabilty: 4
+Next available charging station is 1
+iteration 12 rank 0 availabilty: 3
+iteration 14 rank 0 availabilty: 3
+iteration 16 rank 0 availabilty: 1
+node_status availability 2rank 0 has enough availability nearby nodes
+Process 2 has coordinates (1, 0)
+iteration 0 rank 2 availabilty: 4
+rank 2 received request for availability from 0
+iteration 2 rank 2 availabilty: 1
+node_status availability 12Base comm 4 at 0.000000
+done communicating
+terminating communication thread
+Next available charging station is 1
+rank 2 received request for availability from 0
+iteration 4 rank 2 availabilty: 1
+node_status availability 12Base comm 4 at 3.004433
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 6 rank 2 availabilty: 1
+node_status availability 2rank 2 has enough availability nearby nodes
+rank 2 received request for availability from 3
+rank 2 received request for availability from 0
+iteration 8 rank 2 availabilty: 3
+iteration 10 rank 2 availabilty: 4
+iteration 12 rank 2 availabilty: 4
+iteration 14 rank 2 availabilty: 2
+rank 2 received request for availability from 3
+rank 2 received request for availability from 0
+iteration 16 rank 2 availabilty: 0
+node_status availability 12Base comm 4 at 17.023845
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 18 rank 2 availabilty: 0
+node_status availability 12Base comm 4 at 19.031389
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 20 rank 2 availabilty: 0
+node_status availability 12Base comm 4 at 21.039368
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 22 rank 2 availabilty: 3
+iteration 24 rank 2 availabilty: 2
+iteration 26 rank 2 availabilty: 4
+iteration 28 rank 2 availabilty: 4
+iteration 30 rank 2 availabilty: 5
+iteration 32 rank 2 availabilty: 5
+iteration 34 rank 2 availabilty: 5
+iteration 36 rank 2 availabilty: 2
+iteration 38 rank 2 availabilty: 3
+iteration 40 rank 2 availabilty: 3
+iteration 42 rank 2 availabilty: 2
+rank 2 received request for availability from 3
+rank 2 received request for availability from 0
+iteration 44 rank 2 availabilty: 3
+rank 2 received request for availability from 0
+iteration 46 rank 2 availabilty: 2
+rank 2 received request for availability from 3
+iteration 48 rank 2 availabilty: 0
+node_status availability 2rank 2 has enough availability nearby nodes
+rank 2 received request for availability from 3
+iteration 50 rank 2 availabilty: 2
+iteration 52 rank 2 availabilty: 2
+iteration 54 rank 2 availabilty: 2
+Process 2 received termination signal.
+terminating threads 0
+terminating threads 4
+terminating threads 3
+terminating threads 2
+terminating threads 1
+Process 2 terminated.
+Base is waiting for status from 3
+Base is waiting for status from 0
+Base is waiting for status from 1
+Base is waiting for status from 2
+Base is waiting for status from 3
+terminating thread from baseBase is waiting for status from 0
+terminating thread from baseBase is waiting for status from 1
+terminating thread from baseBase is waiting for status from 2
+terminating thread from baserank 0 received request for availability from 1
+rank 0 received request for availability from 2
+iteration 18 rank 0 availabilty: 0
+node_status availability 10Base comm 4 at 17.028155
+done communicating
+terminating communication thread
+Next available charging station is 1
+iteration 20 rank 0 availabilty: 0
+node_status availability 10Base comm 4 at 19.036201
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 22 rank 0 availabilty: 2
+Next available charging station is 1
+iteration 24 rank 0 availabilty: 3
+iteration 26 rank 0 availabilty: 4
+iteration 28 rank 0 availabilty: 4
+iteration 30 rank 0 availabilty: 5
+iteration 32 rank 0 availabilty: 5
+iteration 34 rank 0 availabilty: 5
+iteration 36 rank 0 availabilty: 2
+iteration 38 rank 0 availabilty: 4
+iteration 40 rank 0 availabilty: 3
+iteration 42 rank 0 availabilty: 1
+node_status availability 2rank 0 has enough availability nearby nodes
+rank 0 received request for availability from 1
+iteration 44 rank 0 availabilty: 1
+node_status availability 3rank 0 has enough availability nearby nodes
+rank 0 received request for availability from 1
+iteration 46 rank 0 availabilty: 2
+rank 0 received request for availability from 2
+iteration 48 rank 0 availabilty: 2
+iteration 50 rank 0 availabilty: 3
+iteration 52 rank 0 availabilty: 2
+Process 0 received termination signal.
+terminating threads 0
+terminating threads 4
+terminating threads 3
+terminating threads 2
+terminating threads 1
+Process 0 terminated.
+Process 1 has coordinates (0, 1)
+iteration 0 rank 1 availabilty: 5
+iteration 2 rank 1 availabilty: 1
+node_status availability 4rank 1 has enough availability nearby nodes
+rank 1 received request for availability from 3
+iteration 4 rank 1 availabilty: 1
+node_status availability 11Base comm 4 at 0.000000
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 6 rank 1 availabilty: 2
+iteration 8 rank 1 availabilty: 1
+node_status availability 11Base comm 4 at 4.010163
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 10 rank 1 availabilty: 3
+iteration 12 rank 1 availabilty: 4
+iteration 14 rank 1 availabilty: 4
+iteration 16 rank 1 availabilty: 2
+rank 1 received request for availability from 0
+rank 1 received request for availability from 3
+iteration 18 rank 1 availabilty: 0
+node_status availability 11Base comm 4 at 15.017739
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 20 rank 1 availabilty: 0
+node_status availability 11Base comm 4 at 17.024963
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 22 rank 1 availabilty: 1
+node_status availability 11Base comm 4 at 19.033582
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 24 rank 1 availabilty: 2
+iteration 26 rank 1 availabilty: 4
+iteration 28 rank 1 availabilty: 3
+iteration 30 rank 1 availabilty: 3
+iteration 32 rank 1 availabilty: 5
+iteration 34 rank 1 availabilty: 5
+iteration 36 rank 1 availabilty: 5
+iteration 38 rank 1 availabilty: 2
+iteration 40 rank 1 availabilty: 4
+iteration 42 rank 1 availabilty: 3
+iteration 44 rank 1 availabilty: 1
+node_status availability 11Base comm 4 at 41.063113
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 46 rank 1 availabilty: 0
+node_status availability 11Base comm 4 at 44.060935
+done communicating
+terminating communication thread
+Next available charging station is 1
+rank 1 received request for availability from 0
+Next available charging station is 1
+iteration 48 rank 1 availabilty: 1
+node_status availability 11Base comm 4 at 47.064650
+done communicating
+terminating communication thread
+Next available charging station is 1
+Next available charging station is 1
+iteration 50 rank 1 availabilty: 2
+rank 1 received request for availability from 3
+iteration 52 rank 1 availabilty: 3
+iteration 54 rank 1 availabilty: 2
+Process 1 received termination signal.
+terminating threads 0
+terminating threads 4
+terminating threads 3
+terminating threads 2
+terminating threads 1
+Process 1 terminated.

@@ -1,0 +1,13 @@
+gcc -Wall bloom.c read_file.c -fopenmp -o bloom_parallel
+number of files 3
+LITTLE_WOMEN.txt has number of lines 195467 has 13142 of unique words
+MOBY_DICK.txt has number of lines 215724 has 22319 of unique words
+SHAKESPEARE.txt has number of lines 965466 has 36385 of unique words
+Reading file process time(s): 11.788717
+unique word length 13142, hash val size 81943unique word length 36385, hash val size 226868unique word length 22319, hash val size 139163Inserting process time(s): 0.021003
+outlying not found in bit array
+ouch not found in bit array
+lair not found in bit array
+film!” not found in bit array
+false positive number 4Query process time(s): 0.536684
+Total Process time(s): 12.348032

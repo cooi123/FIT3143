@@ -1,0 +1,194 @@
+Comm Size: 1: Grid Dimension =[1 x 1] 
+Process 0 has coordinates (0, 0)
+iteration 0 rank 0 availabilty: 5
+iteration 2 rank 0 availabilty: 3
+iteration 4 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 0.000000
+done communicating
+terminating communication thread
+iteration 6 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 2.004404
+done communicating
+terminating communication thread
+iteration 8 rank 0 availabilty: 4
+iteration 10 rank 0 availabilty: 2
+iteration 12 rank 0 availabilty: 2
+iteration 14 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 10.013279
+done communicating
+terminating communication thread
+iteration 16 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 12.017584
+done communicating
+terminating communication thread
+iteration 18 rank 0 availabilty: 2
+iteration 20 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 16.023441
+done communicating
+terminating communication thread
+iteration 22 rank 0 availabilty: 0
+Base is running with 1
+current iteration 1
+current iteration 2
+Base is waiting for status from 0
+current iteration 3
+Base is waiting for status from 0
+current iteration 4
+Base is waiting for status from 0
+current iteration 5
+Base is waiting for status from 0
+current iteration 6
+Base is waiting for status from 0
+current iteration 7
+Base is waiting for status from 0
+current iteration 8
+Base is waiting for status from 0
+current iteration 9
+Base is waiting for status from 0
+current iteration 10
+Base is waiting for status from 0
+current iteration 11
+Base is waiting for status from 0
+current iteration 12
+Base is waiting for status from 0
+current iteration 13
+Base is waiting for status from 0
+current iteration 14
+Base is waiting for status from 0
+current iteration 15
+Base is waiting for status from 0
+current iteration 16
+Base is waiting for status from 0
+current iteration 17
+Base is waiting for status from 0
+current iteration 18
+Base is waiting for status from 0
+current iteration 19
+Base is waiting for status from 0
+current iteration 20
+Base is waiting for status from 0
+current iteration 21
+Base is waiting for status from 0
+current iteration 22
+Base is waiting for status from 0
+current iteration 23
+Base is waiting for status from 0
+current iteration 24
+Base is waiting for status from 0
+current iteration 25
+Base is waiting for status from 0
+current iteration 26
+Base is waiting for status from 0
+current iteration 27
+Base is waiting for status from 0
+current iteration 28
+Base is waiting for status from 0
+current iteration 29
+Base is waiting for status from 0
+current iteration 30
+Base is waiting for status from 0
+current iteration 31
+Base is waiting for status from 0
+current iteration 32
+Base is waiting for status from 0
+current iteration 33
+Base is waiting for status from 0
+current iteration 34
+Base is waiting for status from 0
+current iteration 35
+Base is waiting for status from 0
+current iteration 36
+Base is waiting for status from 0
+current iteration 37
+Base is waiting for status from 0
+current iteration 38
+Base is waiting for status from 0
+current iteration 39
+Base is waiting for status from 0
+current iteration 40
+Base is waiting for status from 0
+current iteration 41
+Base is waiting for status from 0
+current iteration 42
+Base is waiting for status from 0
+current iteration 43
+Base is waiting for status from 0
+current iteration 44
+Base is waiting for status from 0
+current iteration 45
+Base is waiting for status from 0
+current iteration 46
+Base is waiting for status from 0
+current iteration 47
+Base is waiting for status from 0
+current iteration 48
+Base is waiting for status from 0
+current iteration 49
+Base is waiting for status from 0
+current iteration 50
+Base is waiting for status from 0
+current iteration 51
+Base is waiting for status from 0
+current iteration 52
+Base is waiting for status from 0
+current iteration 53
+Base is waiting for status from 0
+current iteration 54
+Base is waiting for status from 0
+current iteration 55
+Base is waiting for status from 0
+current iteration 56
+Base is waiting for status from 0
+current iteration 57
+Base is waiting for status from 0
+current iteration 58
+Base is waiting for status from 0
+current iteration 59
+Base is waiting for status from 0
+current iteration 60
+Base is waiting for status from 0
+Base is waiting for status from 0
+node_status availability 00Base comm 1 at 18.027549
+done communicating
+terminating communication thread
+iteration 24 rank 0 availabilty: 0
+node_status availability 00Base comm 1 at 20.031620
+done communicating
+terminating communication thread
+iteration 26 rank 0 availabilty: 0
+node_status availability 00Base comm 1 at 22.035738
+done communicating
+terminating communication thread
+iteration 28 rank 0 availabilty: 3
+iteration 30 rank 0 availabilty: 5
+iteration 32 rank 0 availabilty: 4
+iteration 34 rank 0 availabilty: 3
+iteration 36 rank 0 availabilty: 5
+iteration 38 rank 0 availabilty: 5
+iteration 40 rank 0 availabilty: 4
+iteration 42 rank 0 availabilty: 3
+iteration 44 rank 0 availabilty: 4
+iteration 46 rank 0 availabilty: 3
+iteration 48 rank 0 availabilty: 4
+iteration 50 rank 0 availabilty: 4
+iteration 52 rank 0 availabilty: 2
+iteration 54 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 50.061513
+done communicating
+terminating communication thread
+iteration 56 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 52.065489
+done communicating
+terminating communication thread
+iteration 58 rank 0 availabilty: 1
+node_status availability 00Base comm 1 at 54.069510
+done communicating
+terminating communication thread
+Process 0 received termination signal.
+terminating threads 2
+terminating threads 1
+terminating threads 0
+terminating threads 4
+terminating threads 3
+Process 0 terminated.
+terminating thread from base

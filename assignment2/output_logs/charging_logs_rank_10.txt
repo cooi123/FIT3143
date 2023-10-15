@@ -1,0 +1,1729 @@
+current log for rank 10 iteration: 0
+15/9/123 6:27:20, 5
+current log for rank 10 iteration: 0
+15/9/123 6:27:20, 5
+current log for rank 10 iteration: 0
+15/9/123 6:27:20, 5
+current log for rank 10 iteration: 2
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+current log for rank 10 iteration: 2
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+current log for rank 10 iteration: 2
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+current log for rank 10 iteration: 4
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+current log for rank 10 iteration: 4
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+current log for rank 10 iteration: 4
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+current log for rank 10 iteration: 6
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 6
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 6
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 0 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 8
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+current log for rank 10 iteration: 8
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+current log for rank 10 iteration: 8
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+current log for rank 10 iteration: 10
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 10
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 10
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 12
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+current log for rank 10 iteration: 12
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 12
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 14
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 0 from 11
+current log for rank 10 iteration: 14
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 16
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 16
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 14
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 18
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+current log for rank 10 iteration: 18
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 16
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 20
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 20
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 18
+15/9/123 6:27:20, 5
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 22
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 20
+15/9/123 6:27:22, 5
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 22
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 24
+15/9/123 6:27:26, 0
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 24
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 22
+15/9/123 6:27:24, 2
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 26
+15/9/123 6:27:28, 2
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 26
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 24
+15/9/123 6:27:26, 0
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 28
+15/9/123 6:27:31, 1
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 28
+15/9/123 6:27:30, 1
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 0 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 0 from 11
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 26
+15/9/123 6:27:29, 2
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 30
+15/9/123 6:27:34, 1
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+current log for rank 10 iteration: 30
+15/9/123 6:27:33, 2
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+rank 10 recieved availablity of 0 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 0 from 11
+current log for rank 10 iteration: 32
+15/9/123 6:27:37, 0
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+current log for rank 10 iteration: 32
+15/9/123 6:27:35, 1
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+current log for rank 10 iteration: 28
+15/9/123 6:27:31, 1
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+current log for rank 10 iteration: 34
+15/9/123 6:27:39, 0
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+current log for rank 10 iteration: 34
+15/9/123 6:27:38, 0
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+current log for rank 10 iteration: 30
+15/9/123 6:27:35, 1
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+current log for rank 10 iteration: 36
+15/9/123 6:27:42, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+current log for rank 10 iteration: 36
+15/9/123 6:27:41, 2
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+current log for rank 10 iteration: 32
+15/9/123 6:27:39, 0
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 38
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 38
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+current log for rank 10 iteration: 40
+15/9/123 6:27:45, 1
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+current log for rank 10 iteration: 40
+15/9/123 6:27:48, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+current log for rank 10 iteration: 34
+15/9/123 6:27:43, 1
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+current log for rank 10 iteration: 42
+15/9/123 6:27:48, 1
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+current log for rank 10 iteration: 42
+15/9/123 6:27:50, 0
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+current log for rank 10 iteration: 36
+15/9/123 6:27:45, 1
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+current log for rank 10 iteration: 44
+15/9/123 6:27:51, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+15/9/123 6:28:12, 5
+current log for rank 10 iteration: 44
+15/9/123 6:27:52, 0
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+current log for rank 10 iteration: 38
+15/9/123 6:27:47, 1
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+current log for rank 10 iteration: 46
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+15/9/123 6:28:12, 5
+15/9/123 6:28:14, 5
+current log for rank 10 iteration: 46
+15/9/123 6:27:54, 0
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+current log for rank 10 iteration: 40
+15/9/123 6:27:50, 0
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+current log for rank 10 iteration: 48
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+15/9/123 6:28:12, 5
+15/9/123 6:28:14, 5
+15/9/123 6:28:16, 5
+current log for rank 10 iteration: 48
+15/9/123 6:27:58, 3
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+15/9/123 6:28:17, 3
+current log for rank 10 iteration: 42
+15/9/123 6:27:53, 0
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+15/9/123 6:28:17, 3
+current log for rank 10 iteration: 50
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+15/9/123 6:28:12, 5
+15/9/123 6:28:14, 5
+15/9/123 6:28:16, 5
+15/9/123 6:28:18, 2
+current log for rank 10 iteration: 50
+15/9/123 6:28:0, 5
+15/9/123 6:28:2, 5
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+15/9/123 6:28:17, 3
+15/9/123 6:28:19, 0
+rank 10 sent request for availablity to 9
+current log for rank 10 iteration: 44
+15/9/123 6:27:57, 1
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+15/9/123 6:28:17, 3
+15/9/123 6:28:19, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+current log for rank 10 iteration: 52
+15/9/123 6:28:2, 4
+15/9/123 6:28:4, 3
+15/9/123 6:28:6, 2
+15/9/123 6:28:8, 3
+15/9/123 6:28:10, 5
+15/9/123 6:28:12, 5
+15/9/123 6:28:14, 5
+15/9/123 6:28:16, 5
+15/9/123 6:28:18, 2
+15/9/123 6:28:20, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 3 from 9
+Neighbour 9 has 3 availability
+rank 10 recieved availablity of 1 from 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 46
+15/9/123 6:28:1, 5
+15/9/123 6:28:3, 3
+15/9/123 6:28:5, 1
+15/9/123 6:28:9, 4
+15/9/123 6:28:11, 5
+15/9/123 6:28:13, 5
+15/9/123 6:28:15, 5
+15/9/123 6:28:17, 3
+15/9/123 6:28:19, 1
+15/9/123 6:28:23, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+current log for rank 10 iteration: 0
+15/9/123 7:13:5, 4
+current log for rank 10 iteration: 2
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+current log for rank 10 iteration: 4
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+current log for rank 10 iteration: 6
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+current log for rank 10 iteration: 8
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 10
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 12
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 0 from 9
+current log for rank 10 iteration: 14
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 0 from 9
+current log for rank 10 iteration: 16
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+current log for rank 10 iteration: 18
+15/9/123 7:13:5, 4
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+current log for rank 10 iteration: 20
+15/9/123 7:13:7, 2
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+current log for rank 10 iteration: 22
+15/9/123 7:13:9, 3
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+current log for rank 10 iteration: 24
+15/9/123 7:13:11, 2
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+current log for rank 10 iteration: 26
+15/9/123 7:13:13, 0
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+current log for rank 10 iteration: 28
+15/9/123 7:13:15, 0
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+current log for rank 10 iteration: 30
+15/9/123 7:13:18, 1
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+current log for rank 10 iteration: 32
+15/9/123 7:13:21, 1
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 0 from 9
+current log for rank 10 iteration: 34
+15/9/123 7:13:23, 3
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 36
+15/9/123 7:13:25, 2
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 38
+15/9/123 7:13:27, 2
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 1 from 9
+current log for rank 10 iteration: 40
+15/9/123 7:13:29, 3
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+rank 10 sent request for availablity to 9
+rank 10 recieved availablity of 3 from 9
+Neighbour 9 has 3 availability
+current log for rank 10 iteration: 42
+15/9/123 7:13:31, 1
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+current log for rank 10 iteration: 44
+15/9/123 7:13:34, 3
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+15/9/123 7:13:56, 5
+current log for rank 10 iteration: 46
+15/9/123 7:13:36, 5
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+15/9/123 7:13:56, 5
+15/9/123 7:13:58, 5
+current log for rank 10 iteration: 48
+15/9/123 7:13:38, 1
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+15/9/123 7:13:56, 5
+15/9/123 7:13:58, 5
+15/9/123 7:14:0, 5
+current log for rank 10 iteration: 50
+15/9/123 7:13:41, 0
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+15/9/123 7:13:56, 5
+15/9/123 7:13:58, 5
+15/9/123 7:14:0, 5
+15/9/123 7:14:2, 5
+current log for rank 10 iteration: 52
+15/9/123 7:13:44, 0
+15/9/123 7:13:46, 0
+15/9/123 7:13:48, 0
+15/9/123 7:13:50, 1
+15/9/123 7:13:54, 4
+15/9/123 7:13:56, 5
+15/9/123 7:13:58, 5
+15/9/123 7:14:0, 5
+15/9/123 7:14:2, 5
+15/9/123 7:14:4, 3
+current log for rank 10 iteration: 0
+15/9/123 7:14:13, 4
+current log for rank 10 iteration: 2
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+current log for rank 10 iteration: 4
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+current log for rank 10 iteration: 6
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+current log for rank 10 iteration: 8
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 10
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 12
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 14
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 16
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+current log for rank 10 iteration: 18
+15/9/123 7:14:13, 4
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+current log for rank 10 iteration: 20
+15/9/123 7:14:15, 4
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+current log for rank 10 iteration: 22
+15/9/123 7:14:17, 5
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 7
+Neighbour 7 has 2 availability
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 3 from 11
+Neighbour 11 has 3 availability
+current log for rank 10 iteration: 24
+15/9/123 7:14:19, 3
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+current log for rank 10 iteration: 26
+15/9/123 7:14:21, 0
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+current log for rank 10 iteration: 28
+15/9/123 7:14:23, 1
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 7
+Neighbour 7 has 2 availability
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+current log for rank 10 iteration: 30
+15/9/123 7:14:26, 1
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+current log for rank 10 iteration: 32
+15/9/123 7:14:30, 1
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+current log for rank 10 iteration: 34
+15/9/123 7:14:34, 5
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+current log for rank 10 iteration: 36
+15/9/123 7:14:36, 5
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+current log for rank 10 iteration: 38
+15/9/123 7:14:38, 3
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+current log for rank 10 iteration: 40
+15/9/123 7:14:40, 1
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+15/9/123 7:15:0, 3
+current log for rank 10 iteration: 42
+15/9/123 7:14:43, 4
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+15/9/123 7:15:0, 3
+15/9/123 7:15:2, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 7
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+current log for rank 10 iteration: 44
+15/9/123 7:14:45, 3
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+15/9/123 7:15:0, 3
+15/9/123 7:15:2, 1
+15/9/123 7:15:6, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 0 from 7
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 46
+15/9/123 7:14:47, 1
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+15/9/123 7:15:0, 3
+15/9/123 7:15:2, 1
+15/9/123 7:15:6, 1
+15/9/123 7:15:10, 2
+current log for rank 10 iteration: 48
+15/9/123 7:14:50, 2
+15/9/123 7:14:52, 3
+15/9/123 7:14:54, 4
+15/9/123 7:14:56, 4
+15/9/123 7:14:58, 5
+15/9/123 7:15:0, 3
+15/9/123 7:15:2, 1
+15/9/123 7:15:6, 1
+15/9/123 7:15:10, 2
+15/9/123 7:15:12, 1
+rank 10 sent request for availablity to 7
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 7
+Neighbour 7 has 2 availability
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 0
+15/9/123 7:17:35, 5
+current log for rank 10 iteration: 2
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+current log for rank 10 iteration: 4
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 6
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 8
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+current log for rank 10 iteration: 10
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+current log for rank 10 iteration: 12
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+current log for rank 10 iteration: 14
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+current log for rank 10 iteration: 16
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+current log for rank 10 iteration: 18
+15/9/123 7:17:35, 5
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 20
+15/9/123 7:17:37, 4
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 0 from 9
+rank 10 recieved availablity of 0 from 11
+current log for rank 10 iteration: 22
+15/9/123 7:17:39, 1
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+current log for rank 10 iteration: 24
+15/9/123 7:17:42, 0
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+current log for rank 10 iteration: 26
+15/9/123 7:17:44, 4
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+current log for rank 10 iteration: 28
+15/9/123 7:17:46, 5
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+current log for rank 10 iteration: 30
+15/9/123 7:17:48, 5
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+current log for rank 10 iteration: 32
+15/9/123 7:17:50, 5
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 2 from 9
+Neighbour 9 has 2 availability
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 34
+15/9/123 7:17:52, 2
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+current log for rank 10 iteration: 36
+15/9/123 7:17:54, 0
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+current log for rank 10 iteration: 38
+15/9/123 7:17:56, 0
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+current log for rank 10 iteration: 40
+15/9/123 7:17:59, 2
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 2 from 11
+Neighbour 11 has 2 availability
+current log for rank 10 iteration: 42
+15/9/123 7:18:1, 4
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+current log for rank 10 iteration: 44
+15/9/123 7:18:3, 5
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+current log for rank 10 iteration: 46
+15/9/123 7:18:5, 5
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+15/9/123 7:18:26, 2
+current log for rank 10 iteration: 48
+15/9/123 7:18:7, 2
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+15/9/123 7:18:26, 2
+15/9/123 7:18:28, 0
+rank 10 sent request for availablity to 9
+rank 10 sent request for availablity to 11
+rank 10 recieved availablity of 1 from 9
+rank 10 recieved availablity of 1 from 11
+current log for rank 10 iteration: 50
+15/9/123 7:18:9, 0
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+15/9/123 7:18:26, 2
+15/9/123 7:18:28, 0
+15/9/123 7:18:31, 3
+current log for rank 10 iteration: 52
+15/9/123 7:18:12, 2
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+15/9/123 7:18:26, 2
+15/9/123 7:18:28, 0
+15/9/123 7:18:31, 3
+15/9/123 7:18:33, 5
+current log for rank 10 iteration: 54
+15/9/123 7:18:14, 0
+15/9/123 7:18:17, 2
+15/9/123 7:18:19, 0
+15/9/123 7:18:22, 4
+15/9/123 7:18:24, 4
+15/9/123 7:18:26, 2
+15/9/123 7:18:28, 0
+15/9/123 7:18:31, 3
+15/9/123 7:18:33, 5
+15/9/123 7:18:35, 4

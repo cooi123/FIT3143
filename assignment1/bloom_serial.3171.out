@@ -1,0 +1,14 @@
+gcc -Wall bloom.c read_file.c -o bloom_serial
+bloom.c: In function ‘main’:
+bloom.c:56: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   56 | #pragma omp parallel for
+      | 
+bloom.c: In function ‘read_from_files’:
+bloom.c:126: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+  126 | #pragma omp parallel for
+      | 
+bloom.c: In function ‘insertingHashedValues’:
+bloom.c:160: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+  160 | #pragma omp parallel for collapse(2)
+      | 
+Serial script completed.

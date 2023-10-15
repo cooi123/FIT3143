@@ -1,0 +1,2 @@
+gcc -Wall bloom.c read_file.c -o bloom_serial
+Serial script completed.
