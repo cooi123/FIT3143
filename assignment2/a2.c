@@ -57,7 +57,7 @@ int main(int argc, char **argv)
     else
     {
         initialise_charging_grid(size - 1, rank, NDIMS, dims, node_comm, &node_grid_comm, dirname);
-        charging_nodes_func(size, rank, base, NDIMS, MPI_COMM_WORLD, node_grid_comm);
+        charging_nodes_func(size, rank, base, NDIMS, MPI_COMM_WORLD, node_grid_comm, dirname);
         MPI_Comm_free(&node_grid_comm);
         MPI_Comm_free(&node_comm);
     }

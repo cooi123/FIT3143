@@ -5,7 +5,6 @@
 #include "charging_node.h"
 #include "shared.h"
 #include <pthread.h>
-const char *dirname = "output_logs";
 #define NODE_THRESHOLD 1
 #define SHIFT_ROW 0
 #define SHIFT_COL 1
@@ -13,6 +12,7 @@ const char *dirname = "output_logs";
 #define MAX_NEIGHBOURS 4
 #define INTERVAL 2
 #define K 5
+char *dirname;
 
 int shared_availability_counter = 0;
 charging_node_logs *charging_logs;
@@ -189,8 +189,9 @@ void *communicate_neighbour_thread_func(void *arg)
     printf("done communicating\n");
 }
 
-int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master_comm, MPI_Comm comm)
+int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master_comm, MPI_Comm comm, char *input_dirname)
 {
+
     MPI_Status base_status, neighbour_status;
     MPI_Request base_req, neighbour_req;
     shared_rank = rank;
@@ -198,7 +199,7 @@ int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master
     shared_comm = comm;
     shared_main_comm = master_comm;
     shared_base_rank = base;
-
+    dirname = input_dirname;
     int my_coords[ndims];
     charging_logs = (charging_node_logs *)malloc(sizeof(charging_node_logs));
     charging_logs->size = 0;
