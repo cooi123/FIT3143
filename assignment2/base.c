@@ -107,7 +107,7 @@ void *node_communication_thread_function(void *arg)
     printf("terminating thread from base");
 }
 
-int base_func(int base, MPI_Comm master_comm, int *dims, int num_chraging_nodes)
+int base_func(int base, MPI_Comm master_comm, int *dims, int num_chraging_nodes, char *dirname)
 {
     printf("Base is running with %d\n", num_chraging_nodes);
     int comm_flag;
@@ -117,7 +117,6 @@ int base_func(int base, MPI_Comm master_comm, int *dims, int num_chraging_nodes)
     pthread_t comm_thread[num_chraging_nodes];
     shared_master_comm = master_comm;
     shared_dims = dims;
-    const char *dirname = "output_logs";
     char mkdir_cmd[200];
     snprintf(mkdir_cmd, sizeof(mkdir_cmd), "mkdir -p %s", dirname);
     system(mkdir_cmd);

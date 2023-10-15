@@ -2,7 +2,7 @@
 
 #define TERMINATE_VALUE -1
 int charging_nodes_func(int size, int rank, int base, int ndims, MPI_Comm master_comm, MPI_Comm comm);
-int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm);
+int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm, char *dirname);
 MPI_Datatype createMPI_charging_node_status();
 struct
 {

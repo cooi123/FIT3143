@@ -25,6 +25,7 @@ int main(int argc, char **argv)
 
     MPI_Comm_split(MPI_COMM_WORLD, rank == base, 0, &node_comm);
 
+    char *dirname;
     if (argc == 3)
     {
         nrows = atoi(argv[1]);
@@ -39,19 +40,21 @@ int main(int argc, char **argv)
             return 0;
         }
     }
-    else
+    else if (argc > 1)
     {
-        // if not specify using mpi to assign.
-        MPI_Dims_create(size - 1, NDIMS, dims);
+        dirname = argv[1];
     }
+
+    // if not specify using mpi to assign.
+    MPI_Dims_create(size - 1, NDIMS, dims);
 
     if (rank == base)
     {
-        base_func(base, MPI_COMM_WORLD, dims, size - 1);
+        base_func(base, MPI_COMM_WORLD, dims, size - 1, dirname);
     }
     else
     {
-        initialise_charging_grid(size - 1, rank, NDIMS, dims, node_comm, &node_grid_comm);
+        initialise_charging_grid(size - 1, rank, NDIMS, dims, node_comm, &node_grid_comm, dirname);
         charging_nodes_func(size, rank, base, NDIMS, MPI_COMM_WORLD, node_grid_comm);
         MPI_Comm_free(&node_grid_comm);
         MPI_Comm_free(&node_comm);

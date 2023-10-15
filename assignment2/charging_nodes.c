@@ -27,7 +27,7 @@ int shared_base_rank;
 int node_availability[K] = {0};
 MPI_Comm shared_comm;
 MPI_Comm shared_main_comm;
-int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm)
+int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm, char *dirname)
 {
 
     int periods[2] = {0, 0}; // Non-periodic grid
