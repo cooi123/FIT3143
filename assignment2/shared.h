@@ -1,5 +1,4 @@
 #define NDIMS 2
-#define K 3
 
 enum MessageTags
 {

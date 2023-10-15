@@ -12,6 +12,7 @@ const char *dirname = "output_logs";
 #define DISPLACEMENT 1
 #define MAX_NEIGHBOURS 4
 #define INTERVAL 2
+#define K 5
 
 int shared_availability_counter = 0;
 charging_node_logs *charging_logs;
@@ -24,7 +25,6 @@ int shared_ndims;
 int shared_rank;
 int shared_base_rank;
 int node_availability[K] = {0};
-
 MPI_Comm shared_comm;
 MPI_Comm shared_main_comm;
 int initialise_charging_grid(int size, int rank, int ndims, int *dims, MPI_Comm existing_comm, MPI_Comm *new_comm)
@@ -131,13 +131,14 @@ void *communicate_neighbour_thread_func(void *arg)
             if (recieved_availability[i] > NODE_THRESHOLD)
             {
                 is_all_available = 1;
-                break;
+                fprintf(log_file, "Neighbour %d has %d availability\n", all_neighbour_ranks[i], recieved_availability[i]);
             }
             node_status.neighbours[node_status.neighbour_size] = all_neighbour_ranks[i];
             node_status.neighbours_avilablity[node_status.neighbour_size] = recieved_availability[i];
             node_status.neighbour_size++;
         }
     }
+    printf("node_status availability %d", node_status.neighbours_avilablity[0]);
     fclose(log_file);
 
     if (!is_all_available)
@@ -163,6 +164,11 @@ void *communicate_neighbour_thread_func(void *arg)
         MPI_Send(buffer, buf_size, MPI_PACKED, shared_base_rank, NODE_BASE_COMM_TAG, shared_main_comm);
         free(buffer);
         // MPI_Send(&node_status.avilablity, 1, MPI_INT, shared_base_rank, BASE_COMM_TAG, shared_main_comm);
+    }
+    else
+    {
+        printf("rank %d has enough availability nearby nodes\n", shared_rank);
+        return 0;
     }
 
     pthread_mutex_lock(&termiate_flag_mutex);

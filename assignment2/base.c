@@ -7,11 +7,11 @@
 MPI_Comm shared_master_comm;
 int *shared_dims;
 volatile int share_terminate_flag = 0;
-int iter = 20;
+int iter = 60;
 FILE *file;
 int current_iteration = 0;
 int *previous_reported_nodes;
-int num_chraging_nodes;
+int shared_num_chraging_nodes;
 void *node_communication_thread_function(void *arg)
 {
     int node = (int)arg;
@@ -66,35 +66,35 @@ void *node_communication_thread_function(void *arg)
             end = MPI_Wtime();
             communication_time = fabs(end - start);
 
-            printf("Reporting Node %d number of adjacent node: %d available port: %d\n", reported_node, recieved_status.neighbour_size, recieved_status.avilablity);
-            int neighbour_coords[2], neighbour_size, nearby_neighbours[4], available_station[num_chraging_nodes];
+            fprintf(file, "Reporting Node %d number of adjacent node: %d available port: %d\n", reported_node, recieved_status.neighbour_size, recieved_status.avilablity);
+            int neighbour_coords[2], neighbour_size, nearby_neighbours[4], available_station[shared_num_chraging_nodes];
 
             for (int i = 0; i < recieved_status.neighbour_size; i++)
             {
                 rank_to_coords(recieved_status.neighbours[i], shared_dims, neighbour_coords);
-                fprintf(file, "Adjacent Nodes %d neighbour coor (%d,%d) %d available port: %d\n", recieved_status.neighbours[i], neighbour_coords[0], neighbour_coords[1], recieved_status.neighbours_avilablity[i]);
+                fprintf(file, "Adjacent Node %d coord (%d,%d) available port: %d\n", recieved_status.neighbours[i], neighbour_coords[0], neighbour_coords[1], recieved_status.neighbours_avilablity[i]);
                 neighbour_size = get_cart_neighbors(recieved_status.neighbours[i], shared_dims, nearby_neighbours);
                 for (int j = 0; j < neighbour_size; j++)
                 {
                     fprintf(file, "Nearby Nodes %d\n", nearby_neighbours[j]);
                     // check recent report from nearby nodes
 
-                    if (previous_reported_nodes[nearby_neighbours[j]] == 0)
+                    if (previous_reported_nodes[nearby_neighbours[j]] != 0)
                     {
 
                         available_station[nearby_neighbours[j]] = 1;
                     }
                 }
             }
-            fprintf(file, "Available station (no report in last %d seconds):", K);
-            for (int i = 0; i < num_chraging_nodes; i++)
+            for (int i = 0; i < shared_num_chraging_nodes; i++)
             {
                 if (available_station[i] == 1)
                 {
-                    fprintf(file, "%d ", i);
+                    fprintf(file, " %d, ", i);
                     MPI_Isend(&available_station[i], 1, MPI_INT, node, BASE_NODE_COMM_TAG, shared_master_comm, &status);
                 }
             }
+            fprintf(file, "\n");
             fprintf(file, "Communication time(seconds): %.2f\n", communication_time);
             fprintf(file, "Total Messages send between reporting node and base: %d\n", 2);
         }
@@ -111,7 +111,7 @@ int base_func(int base, MPI_Comm master_comm, int *dims, int num_chraging_nodes)
 {
     printf("Base is running with %d\n", num_chraging_nodes);
     int comm_flag;
-    num_chraging_nodes = num_chraging_nodes;
+    shared_num_chraging_nodes = num_chraging_nodes;
     previous_reported_nodes = (int *)malloc(sizeof(int) * num_chraging_nodes);
     MPI_Status incoming_status;
     pthread_t comm_thread[num_chraging_nodes];

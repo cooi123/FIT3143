@@ -12,12 +12,12 @@
 
 int main(int argc, char **argv)
 {
-    int rank, size, nrows, ncols;
+    int rank, size, nrows, ncols, provided;
     int dims[NDIMS] = {0}, coord[NDIMS];
 
     MPI_Comm node_comm, node_grid_comm;
 
-    MPI_Init(&argc, &argv);
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_MULTIPLE, &provided);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
@@ -53,7 +53,10 @@ int main(int argc, char **argv)
     {
         initialise_charging_grid(size - 1, rank, NDIMS, dims, node_comm, &node_grid_comm);
         charging_nodes_func(size, rank, base, NDIMS, MPI_COMM_WORLD, node_grid_comm);
+        MPI_Comm_free(&node_grid_comm);
+        MPI_Comm_free(&node_comm);
     }
+
     MPI_Finalize();
     return 0;
 }
